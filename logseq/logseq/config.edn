@@ -6,6 +6,9 @@
  ;; need to use Markdown for some projects.
  ;; :preferred-format ""
  :default-home {:page "Contents"}
+ :preferred-format "Markdown"
+ :feature/enable-journals? false
+ :feature/enable-flashcards? false
 
  ;; Preferred workflow style.
  ;; Value is either ":now" for NOW/LATER style,
