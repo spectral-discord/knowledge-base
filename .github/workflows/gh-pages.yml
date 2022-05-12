@@ -17,6 +17,7 @@ jobs:
         uses: pengx17/logseq-publish@main
         with:
           src: logseq
+          dest: www
 
       - name: Add .nojekyll file
         run: touch $GITHUB_WORKSPACE/www/.nojekyll
