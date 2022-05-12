@@ -17,6 +17,7 @@ jobs:
         uses: pengx17/logseq-publish@0.1.5
         with:
           src: logseq
+          dest: www
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
