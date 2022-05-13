@@ -2,12 +2,12 @@
 	- Sometimes I do things with sounds, computers, and electronics
 	-
 	- In this house, we believe:
-		- Knowledge, software, and the things you need for a healthy, happy life all want to be free
+		- Knowledge, software, and your needs for a healthy, happy life all want to be free
 		- All cops are bastards and landlords are leeches
 		- Prisons, borders, and capitalism must be abolished
-		- Sex / gender and race are socially-constructed systems of oppression
-			- Bio-essentialism is dualistic bullshit, which is the worst kind of bullshit
+		- Bio-essentialism is dualistic bullshit, which is the worst kind of bullshit
 		- *We can create utopias*
 		-
 	- [My Github](https://github.com/necropolina)
 - [Google Bookchin](https://duckduckgo.com/?q=bookchin)
+-
