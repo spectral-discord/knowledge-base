@@ -1,3 +1,3 @@
 - Welcome! This is the *work in progress* knowledge base for Spectral Discord projects. Yay!
 -
-- {{embed [[Contents]]}}
+- ## [[Contents]]
