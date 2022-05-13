@@ -5,9 +5,7 @@
  ;; maybe your personal preferred format is Org but you'd
  ;; need to use Markdown for some projects.
  ;; :preferred-format ""
- :default-home {:page "Spectral Discord Knowledge Base"}
- :preferred-format "Markdown"
- :feature/enable-journals? false
+ :default-home {:page "Contents"}
 
  ;; Preferred workflow style.
  ;; Value is either ":now" for NOW/LATER style,
@@ -60,7 +58,7 @@
  ;; :default-home {:page "Jun 3rd, 2021"}
  ;; 3. Setup page "home" as home page with multiple pages in sidebar
  ;; :default-home {:page "home" :sidebar ["page a" "page b"]}
-:sidebar ["Contents"]
+
  ;; Tell logseq to use a specific folder in the repo as a default location for notes
  ;; if not specified, notes are stored in `pages` directory
  ;; :pages-directory "your-directory"
@@ -179,9 +177,6 @@
  :ref/default-open-blocks-level 2
 
  :ref/linked-references-collapsed-threshold 50
- :favorites ["Contents" "TSON"]
- :publishing/all-pages-public? true
- :ui/show-brackets? false
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5
