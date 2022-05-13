@@ -8,6 +8,7 @@
  :default-home {:page "Spectral Discord Knowledge Base"}
  :preferred-format "Markdown"
  :feature/enable-journals? false
+ :feature/enable-flashcards? false
 
  ;; Preferred workflow style.
  ;; Value is either ":now" for NOW/LATER style,
