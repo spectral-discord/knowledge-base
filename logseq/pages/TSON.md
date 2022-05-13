@@ -1,6 +1,6 @@
-- # TSON
-  *TSON* (Tuning-Spectrum Object Notation) is a YAML-based file format for storing musical tuning and timbre/spectrum data
+- *TSON* (Tuning-Spectrum Object Notation) is a YAML-based file format for storing musical tuning and timbre/spectrum data
 	- ### Why another microtonal file standard?
+	  collapsed:: true
 		- [Valid question.](https://xkcd.com/927/)
 		- Existing formats aren't equipped for modern xenharmonic/microtonal compositional frameworks and software practices...
 		  collapsed:: true
