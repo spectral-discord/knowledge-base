@@ -1,4 +1,4 @@
 - [[Tonality]] Tools
 	- [[TSON]] - *Tuning Spectrum Object Notation*
 		- [[TSONify]] - TSON toolkit
-	- [[TonalHub]] - Webapp + REST API archive and toolkit for working with tonal systems
+	- [[TonalHub]] - Webapp + REST API for archiving and working with tonal systems
