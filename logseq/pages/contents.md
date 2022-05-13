@@ -1,1 +1,2 @@
-- something something
+- This is the *work in progress* knowledge base for Spectral Discord projects, yay!
+- [[TSON]]
