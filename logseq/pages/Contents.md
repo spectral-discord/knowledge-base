@@ -1,1 +1,1 @@
-- [[TSON]]
+- [[TSON]] - *Tuning Spectrum Object Notation* - File format for tuning and timbre data
