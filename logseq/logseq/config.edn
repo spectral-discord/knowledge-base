@@ -5,7 +5,7 @@
  ;; maybe your personal preferred format is Org but you'd
  ;; need to use Markdown for some projects.
  ;; :preferred-format ""
- :default-home {:page "Contents"}
+ :default-home {:page "Spectral Discord Knowledge Base"}
  :preferred-format "Markdown"
  :feature/enable-journals? false
  :feature/enable-flashcards? false
