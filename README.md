@@ -1,2 +1,1 @@
-# Spectral Discord Knowledge Base
-Knowledge base / documentation for Spectral Discord, TSON, etc.
+# [Spectral Discord Knowledge Garden](https://spectral-discord.github.io/knowledge-base)
