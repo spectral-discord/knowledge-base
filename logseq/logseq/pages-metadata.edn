@@ -10,9 +10,6 @@
  {:block/name "card",
   :block/created-at 1652384242115,
   :block/updated-at 1652384242115}
- {:block/name "contents",
-  :block/created-at 1652384242116,
-  :block/updated-at 1652384563953}
  {:block/name "doing",
   :block/created-at 1652384242115,
   :block/updated-at 1652384242115}
