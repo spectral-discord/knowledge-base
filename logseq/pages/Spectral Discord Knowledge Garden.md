@@ -1,4 +1,4 @@
-- Welcome! This is the *work in progress* knowledge base for Spectral Discord projects. Yay!
+- Welcome! This is the *work in progress* knowledge garden for Spectral Discord projects. Yay!
 -
 - [Spectral Discord](https://spectraldiscord.com) is a project by [[Lina]], combining psychoacoustics research with modern audio technologies to create new tools for musical experimentation, performance, and research.
 -
