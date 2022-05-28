@@ -137,8 +137,7 @@
 		  ```
 - ## Understanding and Using TSON
   id:: 6291b7d7-25fc-4c5b-9a69-31565e1b89d8
-  collapsed:: true
-	- TSON is designed to hold ((62911960-76e1-4cb8-81a7-ee92fc8019b8)), ((6291b083-cb55-4961-8a93-e977afd6dc98)), and ((6291b0c2-024a-45e7-86dc-4d149993c94e))
+	- TSON is designed to hold [tuning systems](((62911960-76e1-4cb8-81a7-ee92fc8019b8))), [spectra](((6291b083-cb55-4961-8a93-e977afd6dc98))), and [sets](((6291b0c2-024a-45e7-86dc-4d149993c94e)))
 	  id:: 3ac6d6f3-0cb8-4b0e-95b2-869c6cf69d12
 	  
 	  At the top level, TSON is just arrays of each.
