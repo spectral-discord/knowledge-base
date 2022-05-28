@@ -46,9 +46,11 @@
   {{embed ((62916399-7ae9-4f8c-b779-5d680caed091))}}
 - ## Specification
   id:: 628ef99f-5c01-4dc6-a801-7a0b7cfe6607
+  collapsed:: true
   
   {{embed ((3ac6d6f3-0cb8-4b0e-95b2-869c6cf69d12)) }}
 	- ## Tuning Systems
+	  collapsed:: true
 	  id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
 	  {{embed ((13fe4f0a-b40a-4b39-aad0-392b0e75d2e1))}}
 	  | Key | Type | Examples |
@@ -61,7 +63,8 @@
 		  Scales are groups of notes and various parameters that can be used to generate all, or part of, a tuning.
 		  
 		  The only required parameters are `notes` and `reference frequency`, but the rest may be useful depending on how you want your tuning to work.
-		  {{embed ((6291bb1c-b654-4134-bb54-a103c0e7a9b9))}}
+		  
+		  A [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is required because the scale's notes are defined as ratios relative to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))) frequency. The reference frequency is used to generate real frequency values for each of the notes. See the ((9ca5419f-19dc-4ba9-a131-4b3891639697)) section for more info and examples!
 		  | Key | Alternatives | Type | Examples |
 		  |-|-|-|-|
 		  | [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) | reference | String, Number | `440 hz`, `200.0` |
@@ -134,12 +137,14 @@
 		  ```
 - ## Understanding and Using TSON
   id:: 6291b7d7-25fc-4c5b-9a69-31565e1b89d8
+  collapsed:: true
 	- TSON is designed to hold ((62911960-76e1-4cb8-81a7-ee92fc8019b8)), ((6291b083-cb55-4961-8a93-e977afd6dc98)), and ((6291b0c2-024a-45e7-86dc-4d149993c94e))
 	  id:: 3ac6d6f3-0cb8-4b0e-95b2-869c6cf69d12
 	  
 	  At the top level, TSON is just arrays of each.
 	- ### Understanding Tuning Systems and Scales
 	  id:: 9ca5419f-19dc-4ba9-a131-4b3891639697
+	  collapsed:: true
 		- In TSON, tuning systems are made of [scales](((629122d9-4089-4ca0-80af-bf8540b22d82))), and scales are made of [notes](((62918617-11a6-4911-abd6-d068605aaa73))).
 		  id:: 13fe4f0a-b40a-4b39-aad0-392b0e75d2e1
 		- Scales are functional and generative in the sense that notes are defined in relation to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))), and a [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is used to generate real frequency values for all of the notes.
@@ -173,6 +178,7 @@
 			          - 2.5		# 200 hz
 			  ```
 	- ### Understanding Scale Parameters
+	  collapsed:: true
 		- Scales can be made to repeat at a given ratio to the [root](((62919617-9d52-416c-be4f-c72edbbbda0f))) - the [repeat ratio](((6291924c-5500-456e-9cca-6a138f6e16c6))) then becomes the new root. This happens in both directions along the frequency spectrum - both increasing and decreasing in pitch.
 			- *Example:*
 			  ```yaml
@@ -206,10 +212,6 @@
 			          - 2			# ... 64 hz, 160 hz
 			  ```
 		- If a repeat ratio is provided but min/max values are not, the scale could be repeated to cover any frequency range (whether toward $$\infty$$, the infinite regression of the asymptote at $$0$$, or both).
-		- A [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is required because the scale's notes are defined as ratios relative to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))) frequency.
-		  id:: 6291bb1c-b654-4134-bb54-a103c0e7a9b9
-		  
-		  The reference frequency is used to generate real frequency values for each of the notes.
 		- If a [reference note](((62919243-8c47-4050-b49c-ca654d73e36b))) is not provided, then the reference frequency will be set to the root that notes use to define their [frequency ratios](((62918b58-f893-48c9-b530-4102f7f3c173))).
 		  id:: 4899ac1f-4ff7-4a70-815f-19fcac761588
 			- *Warning:* If a note with a frequency ratio of `1` is not defined, then a note will not exist there, nor at repeat intervals. If a reference note isn't defined either, then the scale's notes will be centered around a root and reference pitch that doesn't exist as a note.
@@ -223,6 +225,7 @@
 		  id:: fe32a44a-6de1-4888-8d38-f33ba4a3187f
 		  
 		  If some or all of a scale's notes don't need a note name, you can just use an array of number and expression strings - you can even use bracket notation arrays as entries in the notes array!
+		  *Example:*
 		  ```yaml
 		  # The two scales below are the same
 		  #
