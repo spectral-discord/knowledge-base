@@ -65,7 +65,7 @@
 - Min Frequency
   id:: 6296c474-695c-450e-9ecb-d0c2fac4ad30
 	- If a **min frequency** is defined for a scale, then no notes will be generated below that frequency.
-	- This, along with [max frequency](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))), allows you to define frequency ranges in which scales can exist.
+	- This, along with max frequency, allows you to define frequency ranges in which scales can exist.
 	- This is particularly useful for multi-scale tuning systems in which you may want different scales to occupy different frequency ranges.
 - Note
   id:: 6296c7f7-ddf0-47bc-823c-a717f49b2b63

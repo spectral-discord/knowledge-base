@@ -179,7 +179,7 @@
  :ref/default-open-blocks-level 2
 
  :ref/linked-references-collapsed-threshold 50
- :favorites ["Contents"]
+ :favorites []
  :publishing/all-pages-public? true
  :ui/show-brackets? true
  :mobile/toolbar-stats {:bold {:counts 1}, :brand-youtube {:counts 0}, :checkbox {:counts 0}, :parentheses {:counts 0}, :command {:counts 0}, :paint {:counts 0}, :list {:counts 0}, :link {:counts 0}, :strikethrough {:counts 0}, :code {:counts 6}, :camera {:counts 0}, :rotate {:counts 18}, :tag {:counts 0}, :brackets {:counts 0}, :italic {:counts 0}, :a-b {:counts 0}, :rotate-clockwise {:counts 3}}
