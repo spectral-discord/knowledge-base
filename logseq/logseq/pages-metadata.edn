@@ -34,6 +34,9 @@
  {:block/name "b",
   :block/created-at 1652384242115,
   :block/updated-at 1652384242115}
+ {:block/name "bibliography & references & notes",
+  :block/created-at 1654889478215,
+  :block/updated-at 1654892638039}
  {:block/name "c",
   :block/created-at 1652384242116,
   :block/updated-at 1652384242116}
@@ -72,7 +75,7 @@
   :block/updated-at 1652384242116}
  {:block/name "spectral discord knowledge garden",
   :block/created-at 1652428226202,
-  :block/updated-at 1653344805876}
+  :block/updated-at 1655398192980}
  {:block/name "todo",
   :block/created-at 1652384242116,
   :block/updated-at 1652384242116}
@@ -87,7 +90,7 @@
   :block/updated-at 1654641624530}
  {:block/name "tson glossary",
   :block/created-at 1654878085722,
-  :block/updated-at 1654878085722}
+  :block/updated-at 1654889381502}
  {:block/name "tson/sync-conflict-20220607-184402-rf3xqwh",
   :block/created-at 1654641847194,
   :block/updated-at 1654641847194}

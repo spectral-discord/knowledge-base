@@ -113,6 +113,8 @@
 	- **Scales** are groups of [notes](((6296c7f7-ddf0-47bc-823c-a717f49b2b63))) and various parameters that can be used to generate all, or part of, a tuning.
 	  id:: 6296869a-0c5b-487b-af9c-dfca96eacf1d
 - Spectrum
-	- **Spectrum** (plural: **spectra**) is a term that is used in TSON to encompass various features of a complex tone.
-	- This is similar to the concept of *timbre*, which is a term that has been used for various purposes in psychoacoustics research and music theory. Here we use spectra to refer specifically to reproducible features that can be .
+	- A **Spectrum** (plural: **spectra**) contains information about an instrument sound
+	- This is similar to the concept of *timbre*, which is a term that has been used for various purposes in psychoacoustics and music theory. Spectrum has also been used by [Sethares](((62ad1af1-aab8-4080-bf6c-32dfe11b7fb462a39c06-97d3-45d1-9837-a0b012346a75))) et al. in a way similar to its usage in TSON:
+	  
+	  {{embed ((62ad1b5e-ab92-4f3c-8b69-b37c3f7dc15e))}}
 	- At the moment, TSON only supports [partial distributions](((629bee65-cf76-4a03-a0e9-4862024c7d4e))) for spectral components, but more options are planned!
