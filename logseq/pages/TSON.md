@@ -82,6 +82,8 @@
 		  {{embed ((fe32a44a-6de1-4888-8d38-f33ba4a3187f))}}
 	- ## Spectra
 	  id:: 6291b083-cb55-4961-8a93-e977afd6dc98
+	  collapsed:: true
+		-
 	- ## Sets
 	  id:: 6291b0c2-024a-45e7-86dc-4d149993c94e
 	- ### Example TSONs
@@ -134,6 +136,7 @@
 		  ```
 - ## Understanding and Using TSON
   id:: 6291b7d7-25fc-4c5b-9a69-31565e1b89d8
+  collapsed:: true
 	- TSON is designed to hold [Tuning Systems](((62911960-76e1-4cb8-81a7-ee92fc8019b8))), [Spectra](((6291b083-cb55-4961-8a93-e977afd6dc98))), and [Sets](((6291b0c2-024a-45e7-86dc-4d149993c94e)))
 	  id:: 3ac6d6f3-0cb8-4b0e-95b2-869c6cf69d12
 	  
@@ -187,7 +190,7 @@
 			          - 1.5		# ... 75 hz, 150 hz, 300 hz, 600 hz ...
 			          - 1.75		# ... 87.5 hz, 175 hz, 350 hz, 700 hz ...
 			  ```
-		- By providing [minimum](((6291b4a8-b6bc-43c8-91f1-2e21878b771c))) and [maximum](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) frequencies for a scale, you can limit the frequency range that notes will be generated for. This way, you can prevent overlapping scales.
+		- By providing [minimum](((6296c474-695c-450e-9ecb-d0c2fac4ad30))) and [maximum](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) frequencies for a scale, you can limit the frequency range that notes will be generated for. This way, you can prevent overlapping scales.
 			- *Example:*
 			  ```yaml
 			  Tuning System
@@ -238,6 +241,8 @@
 		            - [ 1, 1.5^(2/4) ]
 		          reference frequency: 100
 		  ```
+	- ### Understanding Spectra
+		-
 - ## Include TSON Support in Your Own Software
   collapsed:: true
 	- Coming Soon (once [specifications](((628ef99f-5c01-4dc6-a801-7a0b7cfe6607))) and [[TSONify]] are further developed)

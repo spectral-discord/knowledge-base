@@ -37,7 +37,7 @@
   id:: 62918b58-f893-48c9-b530-4102f7f3c173
 	- A **frequency ratio** defines a pitch's distance from a given reference or root frequency.
 	- Frequency ratios are used when defining [scales](((6291ba45-59c1-4071-96b1-5d56a5a0f999))) and partial distributions because humans perceive pitch as scaling approximately logarithmically.
-	- Ratios allow the real frequency distance (i.e. measured in Hertz) to grow or shrink depending on the  frequency of the root that the ratios depend on.
+	- Ratios allow the real frequency distance (i.e. measured in Hertz) to grow or shrink depending on the frequency of the root that the ratios depend on.
 	- *Example*
 	  collapsed:: true
 		- Although the notes in the two scales below have the same frequency ratios, the change in the [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) results in different frequencies being mapped onto the notes.
@@ -114,7 +114,8 @@
 	  id:: 6296869a-0c5b-487b-af9c-dfca96eacf1d
 - Spectrum
 	- A **Spectrum** (plural: **spectra**) contains information about an instrument sound
-	- This is similar to the concept of *timbre*, which is a term that has been used for various purposes in psychoacoustics and music theory. Spectrum has also been used by [Sethares](((62a39c06-97d3-45d1-9837-a0b012346a75))) et al. in a way similar to its usage in TSON:
+	- This is similar to the concept of *timbre*, which is a term that has been used for various purposes in psychoacoustics and music theory. Spectrum has also been used by [Sethares](((62ad1af1-aab8-4080-bf6c-32dfe11b7fb462a39c06-97d3-45d1-9837-a0b012346a75))) et al. in a way similar to its usage in TSON:
 	  
 	  {{embed ((62ad1b5e-ab92-4f3c-8b69-b37c3f7dc15e))}}
-	- At the moment, TSON only supports [partial distributions](((629bee65-cf76-4a03-a0e9-4862024c7d4e))) for spectral components, but more options are planned!
+	- At the moment, TSON only supports [partial distributions](((629bee65-cf76-4a03-a0e9-4862024c7d4e))) for spectral components, but more are planned!
+-
