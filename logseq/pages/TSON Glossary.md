@@ -1,4 +1,4 @@
-- Expression
+- #### Expression
   id:: 629146bc-6e1e-4a00-b2a0-5c205cfb23c6
 	- **Expressions** are mathematical expressions, which can be used to define various parameters in TSON as an alternative to a real number.
 	- They use a simple syntax that you're probably familiar with, but only allow for so much mathematical complexity. Whitespace is ignored.
@@ -33,7 +33,7 @@
 	- *Examples*
 	  collapsed:: true
 		- ***TODO***
-- Frequency Ratio
+- #### Frequency Ratio
   id:: 62918b58-f893-48c9-b530-4102f7f3c173
 	- A **frequency ratio** defines a pitch's distance from a given reference or root frequency.
 	- Frequency ratios are used when defining [scales](((6291ba45-59c1-4071-96b1-5d56a5a0f999))) and partial distributions because humans perceive pitch as scaling approximately logarithmically.
@@ -57,28 +57,28 @@
 		          - 1.5		# 750 hz
 		          - 1.75		# 875 hz
 		  ```
-- Max Frequency
+- #### Max Frequency
   id:: 6291bc28-1b8c-4517-b0b8-d8a6d001ce91
 	- If a **max frequency** is defined for a scale, then no notes will be generated above that frequency.
 	- This, along with [min frequency](((6296c474-695c-450e-9ecb-d0c2fac4ad30))), allows you to define frequency ranges in which scales can exist.
 	- This is particularly useful for multi-scale tuning systems in which you may want different scales to occupy different frequency ranges.
-- Min Frequency
+- #### Min Frequency
   id:: 6296c474-695c-450e-9ecb-d0c2fac4ad30
 	- If a **min frequency** is defined for a scale, then no notes will be generated below that frequency.
 	- This, along with [max frequency](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))), allows you to define frequency ranges in which scales can exist.
 	- This is particularly useful for multi-scale tuning systems in which you may want different scales to occupy different frequency ranges.
-- Note
+- #### Note
   id:: 6296c7f7-ddf0-47bc-823c-a717f49b2b63
 	- **Notes** represent a scale's pitches.
-- Partial Distribution
+- #### Partial Distribution
   id:: 629bee65-cf76-4a03-a0e9-4862024c7d4e
 	- A **partial distribution** contains a finite set of frequencies (i.e., partials) in a [spectrum](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))).
 	- Each frequency represents a sine wave, and must contain a [frequency ratio](((62918b58-f893-48c9-b530-4102f7f3c173))) and an amplitude.
 	- There isn't a limit to the number of partials that can be represented in a partial distribution. You can use it to represent a select set of salient partials to use as a basis for more complex sounds, as well as high number of partials acquired via spectral analysis.
-- Reference Frequency
+- #### Reference Frequency
   id:: 62919254-679c-4edd-aacc-105fc45c85b2
 	- The **reference frequency** is used to map a scale's notes - via their [frequency ratios](((62918b58-f893-48c9-b530-4102f7f3c173))) - onto real frequencies in [hertz]((https://en.m.wikipedia.org/wiki/Hertz)).
-- Reference Note
+- #### Reference Note
   id:: 62919243-8c47-4050-b49c-ca654d73e36b
 	- If a **reference note** is defined, then that note will be mapped onto the reference frequency, and all other notes will be mapped relative to the reference note.
 	- *Example*
@@ -96,7 +96,7 @@
 		          - 1.75			# 350 hz
 		          - 2				# 400 hz
 		  ```
-- Repeat Ratio
+- #### Repeat Ratio
   id:: 6291924c-5500-456e-9cca-6a138f6e16c6
 	- If a **repeat ratio** is defined, the entire scale will repeat at this ratio.
 	- When the scale repeats, the repeat ratio becomes the new root and all of the notes are generated in relation to this new root.
@@ -105,16 +105,16 @@
 		- *Example:* If the scale's repeat ratio is `2` and its root sits at `100 hz`, then the next highest scale iteration will have a root of `200 hz` and the next lowest iteration will have a root of `50 hz`. Then `400 hz` and `25 hz`, etc.
 	- This process repeats until either no more notes need to be generated or the [min](((6296c474-695c-450e-9ecb-d0c2fac4ad30)))/[max](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) frequencies have been reached.
 	- This has often been referred to elsewhere as a ***pseudo-octave***. TSON uses the more generic **repeat ratio** that doesn't refer to specific tonal structures or concepts in western music theory (8 diatonic scale notes per octave, for instance).
-- Root
+- #### Root
   id:: 62919617-9d52-416c-be4f-c72edbbbda0f
 	- In the context of both a scale's [notes](((6296c7f7-ddf0-47bc-823c-a717f49b2b63))) and a spectrum's [partial distributions](((629bee65-cf76-4a03-a0e9-4862024c7d4e))), the **root** refers a [frequency ratio](((62918b58-f893-48c9-b530-4102f7f3c173))) of `1.0`.
 	- Thus, all frequency ratios - including the [repeat ratio](((6291924c-5500-456e-9cca-6a138f6e16c6))) - are defined in relation to the root.
 	- The root doesn't have to coincide with a note - ie, a note with a frequency ratio of `1` must be defined if you want one to exist there.
-- Scale
+- #### Scale
   id:: 6291ba45-59c1-4071-96b1-5d56a5a0f999
 	- **Scales** are groups of [notes](((6296c7f7-ddf0-47bc-823c-a717f49b2b63))) and various parameters that can be used to generate all, or part of, a tuning.
 	  id:: 6296869a-0c5b-487b-af9c-dfca96eacf1d
-- Spectrum
+- #### Spectrum
   id:: 62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e
 	- A **Spectrum** contains information about a sound or tone.
 	- This is similar to the concept of *timbre*, which is a term that has been used to refer to perceived qualities of a tone in psychoacoustics and music theory. Spectrum, however, refers to a tone's physical features, as described by [Sethares (2002)](((62ad1af1-aab8-4080-bf6c-32dfe11b7fb4))):
