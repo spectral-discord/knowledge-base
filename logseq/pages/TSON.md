@@ -43,22 +43,30 @@
   {{embed ((62916399-7ae9-4f8c-b779-5d680caed091))}}
 - ## Specification
   id:: 628ef99f-5c01-4dc6-a801-7a0b7cfe6607
-  collapsed:: true
   
   {{embed ((3ac6d6f3-0cb8-4b0e-95b2-869c6cf69d12)) }}
+  | Key | Type | Examples |
+  |-|-|-|-|
+  | tuning systems | Array <Object> | See the [tuning systems specification](((62911960-76e1-4cb8-81a7-ee92fc8019b8))) |
+  | spectra | Array <Object> | See the [spectra specification](((6291b083-cb55-4961-8a93-e977afd6dc98))) |
+  | sets | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
 	- ## Tuning Systems
 	  id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
 	  collapsed:: true
+	  
 	  {{embed ((13fe4f0a-b40a-4b39-aad0-392b0e75d2e1))}}
 	  | Key | Type | Examples |
 	  |-|-|-|
 	  | name | String | `Slendro`, `5-limit`, `My Tuning` |
 	  | description | String | `A description might be nice to add` |
+	  | id | String | `1`, `My Tuning` |
 	  | scales | Array <Object> | See the [scales specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
+	  
+	  If an ID is defined, it must be a unique value that isn't used by any other tuning systems.
 		- ## Scales
 		  id:: 629122d9-4089-4ca0-80af-bf8540b22d82
-		  {{embed ((6296869a-0c5b-487b-af9c-dfca96eacf1d))}} 
 		  
+		  {{embed ((6296869a-0c5b-487b-af9c-dfca96eacf1d))}} 
 		  The only required parameters are `notes` and `reference frequency`, but the rest may be useful depending on how you want your tuning to work.
 		  
 		  A [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is required because the scale's notes are defined as ratios relative to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))). The reference frequency is used to generate real frequency values for each of the notes. See the ((9ca5419f-19dc-4ba9-a131-4b3891639697)) section for more info and examples!
@@ -70,10 +78,12 @@
 		  | max frequency | max | String, Number | `666 hz`, `20000.0` |
 		  | min frequency | min | String, Number | `666 hz`, `20.0` |
 		  | notes | | Array<[Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))), Object> | See the [notes specification](((62918617-11a6-4911-abd6-d068605aaa73))) |
+		  | [spectrum](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) | | String | `7`, `My Spectrum` |
 		  {{embed ((4899ac1f-4ff7-4a70-815f-19fcac761588))}}
 		-
 		- ## Notes
 		  id:: 62918617-11a6-4911-abd6-d068605aaa73
+		  
 		  {{embed ((6291c175-343a-4c3b-9fc7-f20c479ddbef))}} 
 		  | Key | Alternatives | Type | Examples |
 		  |-|-|-|-|
@@ -83,9 +93,48 @@
 	- ## Spectra
 	  id:: 6291b083-cb55-4961-8a93-e977afd6dc98
 	  collapsed:: true
-		-
+	  
+	  {{embed ((62f3497b-ac78-49d3-8971-12db0df8a53c))}}
+	  | Key | Alternatives | Type | Examples |
+	  |-|-|-|-|
+	  | name | | String | `Violin`, `Inharmonic #3` |
+	  | description | | String | `Some description` |
+	  | id | String | `1`, `My Spectrum` |
+	  | partial distribution | partials | Array <Object> | See the [partials specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
+	  
+	  If an ID is defined, it must be a unique value that isn't used by any other spectra.
+		- ## Partial Distribution
+		  
+		  The **partials** array contains the spectrum's [partial distribution](((629bee65-cf76-4a03-a0e9-4862024c7d4e))).
+		  
+		  Each partial is represented by an object containing a [frequency ratio](((62918b58-f893-48c9-b530-4102f7f3c173))) and an [amplitude weight](((63111de0-f636-40c4-8c5f-da2c9164619b))).
+		  | Key | Alternatives | Type |
+		  |-|-|-|
+		  | frequency ratio | frequency, ratio | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
+		  | amplitude weight | amplitude, weight | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
 	- ## Sets
 	  id:: 6291b0c2-024a-45e7-86dc-4d149993c94e
+	  
+	  {{embed ((63113e04-b1ed-4f89-b615-b012672760d2))}}
+	  | Key | Type | Examples |
+	  |-|-|-|-|
+	  | name | String | `Composition 5` |
+	  | description | String | `Some description` |
+	  | members | Array <Object> | See the [set members specification](((63113f49-888a-4948-b896-b7448242a854))) |
+		- ## Set Members
+		  id:: 63113f49-888a-4948-b896-b7448242a854
+		  
+		  Set members can reference a tuning system, a spectrum, or both.
+		  
+		  If both are defined, you can also provide a boolean, `override scale spectra`, which determines whether the spectrum defined in the set member should be used instead of any spectra that are declared in the tuning's scales.
+		  
+		  To include a spectrum or tuning in a set, the tuning or spectra must be defined in their respective arrays, and you must reference its `id` parameter, which must be a unique value.
+		  
+		  | Key | Alternatives | Type | Examples |
+		  |-|-|-|-|
+		  | tuning system | tuning | String | `1`, `My Special Tuning` |
+		  | spectrum | | String | `1`, `My Special Spectrum` |
+		  | override scale spectra | | Boolean | `true`, `false` |
 	- ### Example TSONs
 	  collapsed:: true
 		- ```yaml
@@ -216,6 +265,8 @@
 			- *Warning:* If a note with a frequency ratio of `1` is not defined, then a note will not exist there, nor at repeat intervals. If a reference note isn't defined either, then the scale's notes will be centered around a root and reference pitch that doesn't exist as a note.
 			  
 			  This may be desirable for some tunings, but many tunings will need a note with a frequency ratio of  `1`.
+		- An optional [spectrum](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) parameter can be provided as well, which must reference the ID of a spectrum that's defined in the `spectra` array.
+			- This is intended to enable different scales within the same tuning system to be used with different spectra, enabling multi-scale as well as multi-spectra tuning systems.
 	- ### Understanding Notes
 	  collapsed:: true
 		- The only requirement for a note is a [frequency ratio](((62918b58-f893-48c9-b530-4102f7f3c173))), which can be defined using either a number (integer or float) or a valid [expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) that resolves to a real number greater than zero.
@@ -241,8 +292,17 @@
 		            - [ 1, 1.5^(2/4) ]
 		          reference frequency: 100
 		  ```
-	- ### Understanding Spectra
-		-
+	- ### Understanding Spectra and Partial Distributions
+	  collapsed:: true
+		- [Spectra](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) are used to store various information that can be used to recreate a sound or tone. This could be an instrument tone or virtually any sound.
+		  {{embed ((62f3497b-755b-44c8-8a08-30d90eef5453))}}
+		- Techniques such as additive synthesis or spectral modelling synthesis can be used with this data to recreate the sound described by this data.
+		- {{embed ((62f3497b-5de1-4bd2-9d5c-2185c8957281))}}
+		- Partial distributions store information about various partials (aka overtones) that comprise a sound. Typically, they are used to store the most prominent partials in a sound, but there isn't a limit to the number of partial that can be stored.
+		- Partials are represented by a [frequency ratio](((62918b58-f893-48c9-b530-4102f7f3c173))) (similar to the frequency ratios of notes) and an [amplitude weight](((63111de0-f636-40c4-8c5f-da2c9164619b))) (similar to the frequency ratios of notes).
+			- Amplitude weights define the relative power of a partial, compared to the other partials in the distribution. Ie, given two partials, the partial with the larger value for its amplitude weight will be louder than the partial with a smaller amplitude.
+			- Typically, the amplitude weights in a partial distribution will be normalized so that they sum to `1.0`. Thus, amplitude weights determine how each partial will comprise the sound's overall loudness when combined.
+			- Amplitude weights do not, however, determine the overall loudness of the sound. A partial distribution with a given set of amplitude weights can be used to represent very quiet as well as very loud sounds. The relative loudness between partials would be consistent, though.
 - ## Include TSON Support in Your Own Software
   collapsed:: true
 	- Coming Soon (once [specifications](((628ef99f-5c01-4dc6-a801-7a0b7cfe6607))) and [[TSONify]] are further developed)

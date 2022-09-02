@@ -1,3 +1,9 @@
+- #### Amplitude Weight
+  id:: 63111de0-f636-40c4-8c5f-da2c9164619b
+	- **Amplitude weights** represent the power (aka magnitude, or, in perceptual terms, loudness) of a partial, relative to the other partials in a [partial distribution](((629bee65-cf76-4a03-a0e9-4862024c7d4e))).
+	- Amplitude weights are represented by a number, which can be defined via [expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))).
+	- While the only constraint for the values is that they be positive, in practice, the values of all amplitude weights in a partial distribution will typically be normalized so that they sum to `1.0`.
+		- This normalization should be performed by audio software that consumes TSON data. If you're writing software that implements TSON, the [[TSONify]] helper libraries will do this for you.
 - #### Expression
   id:: 629146bc-6e1e-4a00-b2a0-5c205cfb23c6
 	- **Expressions** are mathematical expressions, which can be used to define various parameters in TSON as an alternative to a real number.
@@ -35,9 +41,9 @@
 		- ***TODO***
 - #### Frequency Ratio
   id:: 62918b58-f893-48c9-b530-4102f7f3c173
-	- A **frequency ratio** defines a pitch's distance from a given reference or root frequency.
-	- Frequency ratios are used when defining [scales](((6291ba45-59c1-4071-96b1-5d56a5a0f999))) and partial distributions because humans perceive pitch as scaling approximately logarithmically.
-	- Ratios allow the real frequency distance (i.e. measured in Hertz) to grow or shrink depending on the  frequency of the root that the ratios depend on.
+	- A **frequency ratio** defines a pitch's relative distance from a given reference or root frequency.
+	- Frequency ratios are used when defining [scales](((6291ba45-59c1-4071-96b1-5d56a5a0f999))) and [partial distributions](((629bee65-cf76-4a03-a0e9-4862024c7d4e))) because humans perceive pitch as scaling approximately logarithmically.
+	- Ratios allow the real frequency distance (i.e. measured in Hertz) to vary depending on the  frequency of the root that the ratios depend on.
 	- *Example*
 	  collapsed:: true
 		- Although the notes in the two scales below have the same frequency ratios, the change in the [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) results in different frequencies being mapped onto the notes.
@@ -69,10 +75,11 @@
 	- This is particularly useful for multi-scale tuning systems in which you may want different scales to occupy different frequency ranges.
 - #### Note
   id:: 6296c7f7-ddf0-47bc-823c-a717f49b2b63
-	- **Notes** represent a scale's pitches.
+	- **Notes** represent a scale's pitches. For [repeating](((6291924c-5500-456e-9cca-6a138f6e16c6))) scales, notes can represent [pitch classes]((https://en.wikipedia.org/wiki/Pitch_class)).
 - #### Partial Distribution
   id:: 629bee65-cf76-4a03-a0e9-4862024c7d4e
 	- A **partial distribution** contains a finite set of frequencies (i.e., partials) in a [spectrum](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))).
+	  id:: 62f3497b-9a72-468e-a6da-0822c75e4050
 	- Each frequency represents a sine wave, and must contain a [frequency ratio](((62918b58-f893-48c9-b530-4102f7f3c173))) and an amplitude.
 	- There isn't a limit to the number of partials that can be represented in a partial distribution. You can use it to represent a select set of salient partials to use as a basis for more complex sounds, as well as high number of partials acquired via spectral analysis.
 - #### Reference Frequency
@@ -100,7 +107,7 @@
   id:: 6291924c-5500-456e-9cca-6a138f6e16c6
 	- If a **repeat ratio** is defined, the entire scale will repeat at this ratio.
 	- When the scale repeats, the repeat ratio becomes the new root and all of the notes are generated in relation to this new root.
-	- The scale also repeats at the inverse of this ratio. That way the scale repeats in both directions across the frequency spectrum from the origin of the scale's [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2)))
+	- The scale also repeats at the inverse of this ratio. That way the scale repeats in both directions across the frequency spectrum from the origin of the scale's [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))).
 	  collapsed:: true
 		- *Example:* If the scale's repeat ratio is `2` and its root sits at `100 hz`, then the next highest scale iteration will have a root of `200 hz` and the next lowest iteration will have a root of `50 hz`. Then `400 hz` and `25 hz`, etc.
 	- This process repeats until either no more notes need to be generated or the [min](((6296c474-695c-450e-9ecb-d0c2fac4ad30)))/[max](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) frequencies have been reached.
@@ -114,10 +121,18 @@
   id:: 6291ba45-59c1-4071-96b1-5d56a5a0f999
 	- **Scales** are groups of [notes](((6296c7f7-ddf0-47bc-823c-a717f49b2b63))) and various parameters that can be used to generate all, or part of, a tuning.
 	  id:: 6296869a-0c5b-487b-af9c-dfca96eacf1d
+- #### Set
+	- Sets allow you to define lists of tuning systems, spectra, and tuning-spectrum pairings.
+	  id:: 63113e04-b1ed-4f89-b615-b012672760d2
+	- These can be used to identify tuning systems and spectra that should be grouped together, but can also be used to iterate through an ordered set of tuning systems and spectra.
+		- Thus, if you need to use multiple tuning systems and/or spectra while performing a composition or show, you can use sets to define the progression of tuning/spectra changes and iterate through them during the performance.
 - #### Spectrum
   id:: 62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e
-	- A **Spectrum** contains information about a sound or tone.
+	- A **spectrum** contains information about a sound or tone.
+	  id:: 62f3497b-ac78-49d3-8971-12db0df8a53c
 	- This is similar to the concept of *timbre*, which is a term that has been used to refer to perceived qualities of a tone in psychoacoustics and music theory. Spectrum, however, refers to a tone's physical features, as described by [Sethares (2002)](((62ad1af1-aab8-4080-bf6c-32dfe11b7fb4))):
+	  id:: 62f3497b-755b-44c8-8a08-30d90eef5453
 	  
 	  {{embed ((62ad1b5e-ab92-4f3c-8b69-b37c3f7dc15e))}}
 	- At the moment, TSON only supports [partial distributions](((629bee65-cf76-4a03-a0e9-4862024c7d4e))) for spectral components, but more are planned!
+	  id:: 62f3497b-5de1-4bd2-9d5c-2185c8957281
