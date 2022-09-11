@@ -43,6 +43,7 @@
   {{embed ((62916399-7ae9-4f8c-b779-5d680caed091))}}
 - ## Specification
   id:: 628ef99f-5c01-4dc6-a801-7a0b7cfe6607
+  collapsed:: true
   
   {{embed ((3ac6d6f3-0cb8-4b0e-95b2-869c6cf69d12)) }}
   | Key | Type | Examples |
@@ -114,6 +115,7 @@
 		  | amplitude weight | amplitude, weight | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
 	- ## Sets
 	  id:: 6291b0c2-024a-45e7-86dc-4d149993c94e
+	  collapsed:: true
 	  
 	  {{embed ((63113e04-b1ed-4f89-b615-b012672760d2))}}
 	  | Key | Type | Examples |
