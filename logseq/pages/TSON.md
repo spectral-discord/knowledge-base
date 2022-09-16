@@ -63,7 +63,7 @@
 	  | id | String | `1`, `My Tuning` |
 	  | scales | Array <Object> | See the [scales specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
 	  
-	  If an ID is defined, it must be a unique value that isn't used by any other tuning systems.
+	  At least one of `name` and `id` must be defined. If an ID is defined, it must be a unique value that isn't used by any other spectra.
 		- ## Scales
 		  id:: 629122d9-4089-4ca0-80af-bf8540b22d82
 		  
@@ -73,11 +73,11 @@
 		  A [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is required because the scale's notes are defined as ratios relative to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))). The reference frequency is used to generate real frequency values for each of the notes. See the ((9ca5419f-19dc-4ba9-a131-4b3891639697)) section for more info and examples!
 		  | Key | Alternatives | Type | Examples |
 		  |-|-|-|-|
-		  | [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) | reference | String, Number | `440 hz`, `200.0` |
+		  | [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) | reference | String, Number | `440 Hz`, `200.0` |
 		  | [reference note](((62919243-8c47-4050-b49c-ca654d73e36b))) | | String | `ref`, `-0`, `The Root`, `Z#` |
 		  | [repeat ratio](((6291924c-5500-456e-9cca-6a138f6e16c6))) | repeat | Number | `2`, `2.1`, `3.0` |
-		  | max frequency | max | String, Number | `666 hz`, `20000.0` |
-		  | min frequency | min | String, Number | `666 hz`, `20.0` |
+		  | max frequency | max | String, Number | `666 Hz`, `20000` |
+		  | min frequency | min | String, Number | `66.6 Hz`, `20.0` |
 		  | notes | | Array<[Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))), Object> | See the [notes specification](((62918617-11a6-4911-abd6-d068605aaa73))) |
 		  | [spectrum](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) | | String | `7`, `My Spectrum` |
 		  {{embed ((4899ac1f-4ff7-4a70-815f-19fcac761588))}}
@@ -100,10 +100,10 @@
 	  |-|-|-|-|
 	  | name | | String | `Violin`, `Inharmonic #3` |
 	  | description | | String | `Some description` |
-	  | id | String | `1`, `My Spectrum` |
+	  | id | | String | `1`, `My Spectrum` |
 	  | partial distribution | partials | Array <Object> | See the [partials specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
 	  
-	  If an ID is defined, it must be a unique value that isn't used by any other spectra.
+	  At least one of `name` and `id` must be defined. If an ID is defined, it must be a unique value that isn't used by any other spectra.
 		- ## Partial Distribution
 		  
 		  The **partials** array contains the spectrum's [partial distribution](((629bee65-cf76-4a03-a0e9-4862024c7d4e))).
