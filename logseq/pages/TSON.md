@@ -46,11 +46,11 @@
   collapsed:: true
   
   {{embed ((3ac6d6f3-0cb8-4b0e-95b2-869c6cf69d12)) }}
-  | Key | Type | Examples |
+  | Key | Alternatives | Type | Examples |
   |-|-|-|-|
-  | tuning systems | Array <Object> | See the [tuning systems specification](((62911960-76e1-4cb8-81a7-ee92fc8019b8))) |
-  | spectra | Array <Object> | See the [spectra specification](((6291b083-cb55-4961-8a93-e977afd6dc98))) |
-  | sets | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
+  | tuning systems | tunings | Array <Object> | See the [tuning systems specification](((62911960-76e1-4cb8-81a7-ee92fc8019b8))) |
+  | spectra | | Array <Object> | See the [spectra specification](((6291b083-cb55-4961-8a93-e977afd6dc98))) |
+  | sets | | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
 	- ## Tuning Systems
 	  id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
 	  collapsed:: true
