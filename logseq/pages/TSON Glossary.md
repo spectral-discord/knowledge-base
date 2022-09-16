@@ -14,21 +14,18 @@
 		  collapsed:: true
 			- Arithmetic: `+`, `-`, `*`, `/`
 			- Exponents: `^`
+			  collapsed:: true
 				- *Example:*
 				  ```yaml
 				  
 				  ```
 			- Modulo: `%`
+			  collapsed:: true
 				- *Example:*
 				  ```yaml
 				  
 				  ```
 			- Parentheses: `( )`
-			- Absolute value: `| |`
-				- *Example:*
-				  ```yaml
-				  
-				  ```
 		- Constants
 		  collapsed:: true
 			- Pi: `pi`
