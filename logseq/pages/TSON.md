@@ -1,11 +1,11 @@
-- ***TSON*** (Tuning-Spectrum Object Notation) is a YAML-based file format for storing musical tuning and timbre/spectrum data (and eventually)
+- ***TSON*** (Tuning-Spectrum Object Notation) is a YAML-based file format for storing musical tuning and spectrum data
   collapsed:: true
 	- ### Why another microtonal file/data standard?
 		- [Valid question.](((629168a2-5251-438a-983c-1c1a993aeaeb)))
 		- Existing formats have too many limitations for modern software and microtonal practices...
 		  collapsed:: true
 			- Some sacrifice portability and manipulability for readability (SCL, TUN), while others are environment-specific or unreadable (MTS)
-			- Each comes some combination of limitations...
+			- Each comes with some combination of limitations...
 				- No reference frequencies
 				- No pseudo-octaves/repetition ratios
 				- No more than 12 notes per octave
@@ -17,13 +17,13 @@
 		  collapsed:: true
 			- Readable without sacrificing portability and manipulability - YAML is readable and backwards-compatible with JSON... which is supported pretty much everywhere now
 			- Compatible with existing tuning formats, yet extensible
-			- Pitch ratios can be defined via either numbers (ints/floats) or expressions, preserving support for JI notation as well as cents, via `2^(cents / 1200)`
+			- Pitch ratios can be defined via numbers or expressions, preserving support for JI notation as well as cents, via `2^(cents / 1200)`
 			- Unrecognized parameters won't break TSON interpretation, they'll just be ignored if not implemented
 			- Able to contain timbre/spectrum data, multiple tunings and timbres per file, plus tuning-timbre pairings and sets
 			- *Planned*: Instrument data (e.g. key layouts) and further timbre data structures (dynamic/reactive timbres, waveforms, and more)
 		- Also, TSON is intended to be a focal point for an set of useful microtonal software...
 		  collapsed:: true
-			- *Coming Soon!*: [[TSONify]] - open-source packages/libraries for multiple languages with useful features for working with TSON data (and hopefully aiding its adoption)
+			- *Coming Soon!*: [[TSONify]] - open-source packages/libraries for multiple languages with useful features for manipulating TSON data and supporting TSON in audio software
 			  collapsed:: true
 				- Conversion between TSON and existing microtonal formats
 				- TSON data validation
@@ -32,7 +32,7 @@
 				- Integration with TonalHub for fetching and updating data hosted in TonalHub instances
 				- Tools for including TSON support in your own software
 				- And more...
-			- *Coming Soon!*: [[TonalHub]] - open-source, self-hostable web app for archiving and working with tuning, timbre, and instrument models
+			- *Coming Soon!*: [[TonalHub]] - open-source, self-hostable web app & API for archiving and creating tuning, spectrum, and instrument models
 			  collapsed:: true
 				- API and UI for archiving, fetching, and manipulating TSON data
 				- TSON data model versioning
@@ -111,8 +111,8 @@
 		  Each partial is represented by an object containing a [frequency ratio](((62918b58-f893-48c9-b530-4102f7f3c173))) and an [amplitude weight](((63111de0-f636-40c4-8c5f-da2c9164619b))).
 		  | Key | Alternatives | Type |
 		  |-|-|-|
-		  | frequency ratio | frequency, ratio | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
-		  | amplitude weight | amplitude, weight | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
+		  | frequency ratio | ratio | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
+		  | amplitude weight | weight | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
 	- ## Sets
 	  id:: 6291b0c2-024a-45e7-86dc-4d149993c94e
 	  collapsed:: true
