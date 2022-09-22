@@ -65,21 +65,19 @@
 	  At least one of `name` and `id` must be defined. If an ID is defined, it must be a unique value that isn't used by any other spectra.
 		- ## Scales
 		  id:: 629122d9-4089-4ca0-80af-bf8540b22d82
-		  
 		  {{embed ((6296869a-0c5b-487b-af9c-dfca96eacf1d))}} 
 		  The only required parameter is `notes`.
 		  | Key | Alternatives | Type | Examples |
 		  |-|-|-|-|
 		  | reference | | Object | See the [reference specification](((632cd327-c00a-41e2-9a4c-e99fb6fde7c9))) |
-		  | repeat ratio | repeat | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))), Number | `3^(7/3)`, `2.1` |
-		  | max frequency | max | String, Number | `666 Hz`, `20000` |
-		  | min frequency | min | String, Number | `66.6 Hz`, `20.0` |
+		  | [repeat ratio](((6291924c-5500-456e-9cca-6a138f6e16c6))) | repeat | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))), Number | `3^(7/3)`, `2.1` |
+		  | [max frequency](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) | max | String, Number | `666 Hz`, `20000` |
+		  | [min frequency](((6296c474-695c-450e-9ecb-d0c2fac4ad30))) | min | String, Number | `66.6 Hz`, `20.0` |
 		  | notes | | Array<[Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))), Object> | See the [notes specification](((62918617-11a6-4911-abd6-d068605aaa73))) |
 		  | [spectrum](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) | | String | `7`, `My Spectrum` |
 		-
 		- ## Reference
 		  id:: 632cd327-c00a-41e2-9a4c-e99fb6fde7c9
-		  
 		  Because the scale's notes are defined as ratios relative to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))), a [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is used to generate real frequency values for each of the notes.
 		  
 		  References are not required to maintain backwards compatibility with older tuning formats that don't support reference frequencies. However, they are highly recommended as they are required for some software that utilizes TSON's larger feature set. If a `reference` object is defined, a `frequency` value is required.
@@ -88,12 +86,11 @@
 		  | Key | Type | Examples |
 		  |-|-|-|-|
 		  | [frequency](((62918b58-f893-48c9-b530-4102f7f3c173))) | String, Number | `440 Hz`, `500` |
-		  | note | String | `A#`, `Dax`, `7` |
+		  | [note](((62919243-8c47-4050-b49c-ca654d73e36b))) | String | `A#`, `Dax`, `7` |
 		  {{embed ((4899ac1f-4ff7-4a70-815f-19fcac761588))}}
 		-
 		- ## Notes
 		  id:: 62918617-11a6-4911-abd6-d068605aaa73
-		  
 		  {{embed ((6291c175-343a-4c3b-9fc7-f20c479ddbef))}} 
 		  | Key | Alternatives | Type | Examples |
 		  |-|-|-|-|
@@ -103,7 +100,6 @@
 	- ## Spectra
 	  id:: 6291b083-cb55-4961-8a93-e977afd6dc98
 	  collapsed:: true
-	  
 	  {{embed ((62f3497b-ac78-49d3-8971-12db0df8a53c))}}
 	  | Key | Alternatives | Type | Examples |
 	  |-|-|-|-|
@@ -111,7 +107,6 @@
 	  | description | | String | `Some description` |
 	  | id | | String | `1`, `My Spectrum` |
 	  | partial distribution | partials | Array <Object> | See the [partials specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
-	  
 	  At least one of `name` and `id` must be defined. If an ID is defined, it must be a unique value that isn't used by any other spectra.
 		- ## Partial Distribution
 		  
@@ -146,7 +141,7 @@
 		  | tuning system | tuning | String | `1`, `My Special Tuning` |
 		  | spectrum | | String | `1`, `My Special Spectrum` |
 		  | override scale spectra | | Boolean | `true`, `false` |
-	- ### Example TSONs
+	- ## Example TSONs
 	  collapsed:: true
 		- ```yaml
 		  Tuning Systems
