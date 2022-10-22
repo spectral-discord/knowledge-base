@@ -63,6 +63,8 @@
 	  | scales | Array <Object> | See the [scales specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
 	  
 	  At least one of `name` and `id` must be defined. If an ID is defined, it must be a unique value that isn't used by any other spectra.
+	  
+	  The only other required parameters are the [reference](((632cd327-c00a-41e2-9a4c-e99fb6fde7c9))) object and the [notes](((62918617-11a6-4911-abd6-d068605aaa73))) array.
 		- ## Scales
 		  id:: 629122d9-4089-4ca0-80af-bf8540b22d82
 		  {{embed ((6296869a-0c5b-487b-af9c-dfca96eacf1d))}} 
@@ -78,9 +80,7 @@
 		-
 		- ## Reference
 		  id:: 632cd327-c00a-41e2-9a4c-e99fb6fde7c9
-		  Because the scale's notes are defined as ratios relative to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))), a [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is used to generate real frequency values for each of the notes.
-		  
-		  References are not required to maintain backwards compatibility with older tuning formats that don't support reference frequencies. However, they are highly recommended as they are required for some software that utilizes TSON's larger feature set. If a `reference` object is defined, a `frequency` value is required.
+		  Because the scale's notes are defined as ratios relative to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))), a [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is used to map real frequency values onto each of the notes.
 		  
 		  See the ((9ca5419f-19dc-4ba9-a131-4b3891639697)) section for more info and examples!
 		  | Key | Type | Examples |
