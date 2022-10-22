@@ -71,8 +71,8 @@
 		  |-|-|-|-|
 		  | reference | | Object | See the [reference specification](((632cd327-c00a-41e2-9a4c-e99fb6fde7c9))) |
 		  | [repeat ratio](((6291924c-5500-456e-9cca-6a138f6e16c6))) | repeat | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))), Number | `3^(7/3)`, `2.1` |
-		  | [max frequency](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) | max | String, Number | `666 Hz`, `20000` |
-		  | [min frequency](((6296c474-695c-450e-9ecb-d0c2fac4ad30))) | min | String, Number | `66.6 Hz`, `20.0` |
+		  | [max frequency](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) | max, maximum | String, Number | `666 Hz`, `20000` |
+		  | [min frequency](((6296c474-695c-450e-9ecb-d0c2fac4ad30))) | min, minimum | String, Number | `66.6 Hz`, `20.0` |
 		  | notes | | Array<[Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))), Object> | See the [notes specification](((62918617-11a6-4911-abd6-d068605aaa73))) |
 		  | [spectrum](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) | | String | `7`, `My Spectrum` |
 		-
