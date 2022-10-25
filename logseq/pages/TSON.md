@@ -59,10 +59,9 @@
 	  |-|-|-|
 	  | name | String | `Slendro`, `5-limit`, `My Tuning` |
 	  | description | String | `A description might be nice to add` |
-	  | id | String | `1`, `My Tuning` |
+	  | id | String | `1`, `My Tuning`, `63113f49-888a-4948-b896-b7448242a854` |
 	  | scales | Array <Object> | See the [scales specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
-	  
-	  At least one of `name` and `id` must be defined. If an ID is defined, it must be a unique value that isn't used by any other spectra.
+	  An `id` must be defined, and it must be a unique value that isn't used by any other tuning systems.
 	  
 	  The only other required parameters are the [reference](((632cd327-c00a-41e2-9a4c-e99fb6fde7c9))) object and the [notes](((62918617-11a6-4911-abd6-d068605aaa73))) array.
 		- ## Scales
@@ -107,7 +106,7 @@
 	  | description | | String | `Some description` |
 	  | id | | String | `1`, `My Spectrum` |
 	  | partial distribution | partials | Array <Object> | See the [partials specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
-	  At least one of `name` and `id` must be defined. If an ID is defined, it must be a unique value that isn't used by any other spectra.
+	  An `id` must be defined, and it must be a unique value that isn't used by any other spectra.
 		- ## Partial Distribution
 		  
 		  The **partials** array contains the spectrum's [partial distribution](((629bee65-cf76-4a03-a0e9-4862024c7d4e))).
@@ -124,9 +123,11 @@
 	  {{embed ((63113e04-b1ed-4f89-b615-b012672760d2))}}
 	  | Key | Type | Examples |
 	  |-|-|-|-|
+	  | id | String | `7`,  `My Set`, `63113f49-888a-4948-b896-b7448242a854`|
 	  | name | String | `Composition 5` |
 	  | description | String | `Some description` |
 	  | members | Array <Object> | See the [set members specification](((63113f49-888a-4948-b896-b7448242a854))) |
+	  An `id` must be defined, and it must be a unique value that isn't used by any other sets.
 		- ## Set Members
 		  id:: 63113f49-888a-4948-b896-b7448242a854
 		  
