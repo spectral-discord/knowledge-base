@@ -299,7 +299,7 @@ a.tag {
 }
 
 .nav-content-item .bd ul a:hover {
-  background-color: var(--cyan-hover); 
+  color: var(--cyan-hover); 
 }
 
 a.chosen, .cp__palette-main .chosen, .cp__select-main .chosen {

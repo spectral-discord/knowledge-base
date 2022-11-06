@@ -63,7 +63,7 @@ html[data-theme="dark"] {
 
   --ls-link-ref-text-color: var(--pink);
   --ls-link-ref-text-hover-color: var(--pink-hover);
-  --ls-block-ref-link-text-color: var(--ls-border-color);
+  --ls-block-ref-link-text-color: var(--cyan);
 
   --ls-tag-text-color: var(--purple);
   --ls-tag-text-hover-color: var(--purple-hover);
@@ -95,7 +95,7 @@ html[data-theme="dark"] {
   --ls-right-sidebar-code-bg-color: var(--light-background);
   --ls-selection-background-color: var(--comment);
   --ls-slide-background-color: var(--ls-primary-background-color);
-  --ls-guideline-color: var(--ls-border-color);
+  --ls-guideline-color: var(--cyan);
   --color-level-1: var(--ls-secondary-background-color);
   --color-level-2: var(--ls-primary-background-color);
   --color-level-3: var(--ls-quaternary-background-color);
@@ -250,7 +250,7 @@ a.tooltip-priority {
 }
 
 .page-reference .bracket {
-  color: var(--ls-border-color);
+  color: var(--cyan);
   opacity: 0.8;
 }
 
@@ -264,11 +264,6 @@ a.tag {
   padding: 0px 3px;
   color: var(--dark-background);
   font-weight: 400;
-}
-
-.py-1, .bg-base-3, .ui__modal-panel, .absolute-modal {
-  border-width: 1px;
-  border-color: var(--ls-border-color);
 }
 
 .tippy-popper .tippy-tooltip.customized-theme {
@@ -299,7 +294,7 @@ a.tag {
   overflow-y: hidden;
 }
 
-.left-sidebar-inner a.item:hover, .menu-link:hover {
+.left-sidebar-inner a.item:hover, .menu-link:hover, .items-center:hover {
   background-color: var(--cyan-hover); 
 }
 
@@ -478,4 +473,9 @@ html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
 /* Changes sidebar link colors to the same color as the icons */
 .left-sidebar-inner a.item > span {
   color: var(--ls-icon-color);
+}
+
+.py-1, .bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown-wrapper {
+  border-width: 1px;
+  border-color: var(--ls-border-color);
 }

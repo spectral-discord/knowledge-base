@@ -294,11 +294,7 @@ a.tag {
   overflow-y: hidden;
 }
 
-.left-sidebar-inner a.item:hover, .menu-link:hover {
-  background-color: var(--cyan-hover); 
-}
-
-.nav-content-item .bd ul a:hover {
+.left-sidebar-inner a.item:hover, .menu-link:hover, .flex.items-center:hover {
   background-color: var(--cyan-hover); 
 }
 

@@ -63,7 +63,7 @@ html[data-theme="dark"] {
 
   --ls-link-ref-text-color: var(--pink);
   --ls-link-ref-text-hover-color: var(--pink-hover);
-  --ls-block-ref-link-text-color: var(--ls-border-color);
+  --ls-block-ref-link-text-color: var(--cyan);
 
   --ls-tag-text-color: var(--purple);
   --ls-tag-text-hover-color: var(--purple-hover);
@@ -266,11 +266,6 @@ a.tag {
   font-weight: 400;
 }
 
-.py-1, .bg-base-3, .ui__modal-panel, .absolute-modal {
-  border-width: 1px;
-  border-color: var(--ls-border-color);
-}
-
 .tippy-popper .tippy-tooltip.customized-theme {
   border-radius: 0px;
   border-width: 1px;
@@ -299,7 +294,7 @@ a.tag {
   overflow-y: hidden;
 }
 
-.left-sidebar-inner a.item:hover, .menu-link:hover {
+.left-sidebar-inner a.item:hover, .menu-link:hover, .nav-content-item:hover {
   background-color: var(--cyan-hover); 
 }
 
@@ -478,4 +473,9 @@ html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
 /* Changes sidebar link colors to the same color as the icons */
 .left-sidebar-inner a.item > span {
   color: var(--ls-icon-color);
+}
+
+.py-1, .bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown-wrapper {
+  border-width: 1px;
+  border-color: var(--ls-border-color);
 }
