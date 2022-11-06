@@ -66,7 +66,7 @@
   :block/updated-at 1665589236740}
  {:block/name "contents",
   :block/created-at 1654642102002,
-  :block/updated-at 1654642102002}
+  :block/updated-at 1667775227159}
  {:block/name "doing",
   :block/created-at 1652384242115,
   :block/updated-at 1652384242115}
@@ -96,7 +96,7 @@
   :block/updated-at 1652384242116}
  {:block/name "spectral discord knowledge garden",
   :block/created-at 1652428226202,
-  :block/updated-at 1667766022752}
+  :block/updated-at 1667775275401}
  {:block/name "todo",
   :block/created-at 1652384242116,
   :block/updated-at 1652384242116}
@@ -105,7 +105,7 @@
   :block/updated-at 1652428226304}
  {:block/name "tson",
   :block/created-at 1652428226309,
-  :block/updated-at 1667765289686}
+  :block/updated-at 1667773023534}
  {:block/name "tson glossary",
   :block/created-at 1660070440622,
   :block/updated-at 1660070440622}

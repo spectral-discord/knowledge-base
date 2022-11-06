@@ -14,17 +14,7 @@
 		  collapsed:: true
 			- Arithmetic: `+`, `-`, `*`, `/`
 			- Exponents: `^`
-			  collapsed:: true
-				- *Example:*
-				  ```yaml
-				  
-				  ```
 			- Modulo: `%`
-			  collapsed:: true
-				- *Example:*
-				  ```yaml
-				  
-				  ```
 			- Parentheses: `( )`
 		- Constants
 		  collapsed:: true

@@ -245,9 +245,9 @@ a.tooltip-priority {
   border-bottom-color: var(--ls-quinary-background-color);
 }
 
-.tippy-popper[x-placement^=bottom] [data-animation=shift].enter {
+/* .tippy-popper[x-placement^=bottom] [data-animation=shift].enter {
   transform: translateY(80%);
-}
+} */
 
 .page-reference .bracket {
   color: var(--cyan);
@@ -479,7 +479,7 @@ html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
   color: var(--ls-icon-color);
 }
 
-.py-1, .bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown-wrapper {
+.bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown-wrapper, .menu-links-wrapper {
   border-width: 1px;
   border-color: var(--ls-border-color);
 }
