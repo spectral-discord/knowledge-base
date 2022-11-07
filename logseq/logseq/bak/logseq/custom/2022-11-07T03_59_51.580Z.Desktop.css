@@ -479,7 +479,12 @@ html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
   color: var(--ls-icon-color);
 }
 
-.py-1, .bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown-wrapper, .menu-links-wrapper {
+.bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown-wrapper, .menu-links-wrapper {
   border-width: 1px;
+  border-color: var(--ls-border-color);
+}
+
+.pb-2 {
+  border-left-width: 2px;
   border-color: var(--ls-border-color);
 }

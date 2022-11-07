@@ -4,6 +4,13 @@
   id:: 62916397-1eda-47e4-9440-e3eb32e673d6
 - *Knowledge Garden Tip:* If a block's bullet has a pink surrounding, it can be expanded by clicking the arrow to the left of the bullet.
   id:: 62916399-7ae9-4f8c-b779-5d680caed091
-	-
+  collapsed:: true
+	- See!
+	  collapsed:: true
+		- Wow, another!
+		  collapsed:: true
+			- They can basically go on forever!
+			  collapsed:: true
+				- But I'm not gonna go on forever...
 - *Knowledge Garden Tip:* Each bullet refers to a "block" of content, which can be viewed independently and referenced or embedded elsewhere in the knowledge garden.
   id:: 62967d4b-ed76-4110-bf14-35e8ae0d4212

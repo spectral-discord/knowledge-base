@@ -87,16 +87,19 @@
   :block/updated-at 1652384242116}
  {:block/name "knowledge garden tips",
   :block/created-at 1654500624773,
-  :block/updated-at 1654500624773}
+  :block/updated-at 1667805603967}
  {:block/name "later",
   :block/created-at 1652384242115,
   :block/updated-at 1652384242115}
  {:block/name "now",
   :block/created-at 1652384242116,
   :block/updated-at 1652384242116}
+ {:block/name "planned",
+  :block/created-at 1667803050756,
+  :block/updated-at 1667803342156}
  {:block/name "spectral discord knowledge garden",
   :block/created-at 1652428226202,
-  :block/updated-at 1667779858587}
+  :block/updated-at 1667803703315}
  {:block/name "todo",
   :block/created-at 1652384242116,
   :block/updated-at 1652384242116}
@@ -105,16 +108,16 @@
   :block/updated-at 1652428226304}
  {:block/name "tson",
   :block/created-at 1652428226309,
-  :block/updated-at 1667784671714}
+  :block/updated-at 1667805431796}
  {:block/name "tson glossary",
   :block/created-at 1660070440622,
-  :block/updated-at 1660070440622}
+  :block/updated-at 1667802461840}
  {:block/name "tson specification",
   :block/created-at 1667776350030,
-  :block/updated-at 1667784486213}
+  :block/updated-at 1667784749433}
  {:block/name "tsonify",
   :block/created-at 1652428226302,
-  :block/updated-at 1652428226302}
+  :block/updated-at 1667805684154}
  {:block/name "understanding and using tson",
   :block/created-at 1667782382079,
   :block/updated-at 1667784645656}

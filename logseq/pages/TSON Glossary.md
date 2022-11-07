@@ -3,7 +3,7 @@
 	- **Amplitude weights** represent the power (aka magnitude, or, in perceptual terms, loudness) of a partial, relative to the other partials in a [partial distribution](((629bee65-cf76-4a03-a0e9-4862024c7d4e))).
 	- Amplitude weights are represented by a number, which can be defined via [expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))).
 	- While the only constraint for the values is that they be positive, in practice, the values of all amplitude weights in a partial distribution will typically be normalized so that they sum to `1.0`.
-		- This normalization should be performed by audio software that consumes TSON data. If you're writing software that implements TSON, the [[TSONify]] helper libraries will do this for you.
+		- This normalization should be performed by audio software that consumes TSON data. If you're writing software that implements TSON, the [[TSONify]] SDKs will do this for you.
 - #### Expression
   id:: 629146bc-6e1e-4a00-b2a0-5c205cfb23c6
 	- **Expressions** are mathematical expressions, which can be used to define various parameters in TSON as an alternative to a real number.
