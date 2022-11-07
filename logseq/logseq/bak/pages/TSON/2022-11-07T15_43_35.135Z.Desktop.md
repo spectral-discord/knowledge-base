@@ -32,4 +32,5 @@
 - ### [Specification]([[TSON Specification]])
 - ### [[Understanding and Using TSON]]
 - ### Include TSON Support in Your Own Software
+  collapsed:: true
 	- #Planned Coming Soon
