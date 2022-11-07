@@ -483,3 +483,8 @@ html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
   border-width: 1px;
   border-color: var(--ls-border-color);
 }
+
+.pb-2 {
+  border-left-width: 2px;
+  border-color: var(--ls-border-color);
+}
