@@ -6,6 +6,7 @@
   | sets | | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
 - ## Tuning Systems
     id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
+	collapsed:: true
 	- {{embed ((17e6ebb8-5570-4191-b7e4-06f9f5e616a9))}}
 	    | Key | Type | Examples |
 	    |-|-|-|
