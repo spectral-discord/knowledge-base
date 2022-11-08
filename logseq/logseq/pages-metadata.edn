@@ -66,13 +66,13 @@
   :block/updated-at 1665589236740}
  {:block/name "contents",
   :block/created-at 1654642102002,
-  :block/updated-at 1667845711148}
+  :block/updated-at 1667875043434}
  {:block/name "contributing",
   :block/created-at 1667780911975,
   :block/updated-at 1667781417661}
  {:block/name "dismal",
   :block/created-at 1667845701234,
-  :block/updated-at 1667847973486}
+  :block/updated-at 1667874932145}
  {:block/name "doing",
   :block/created-at 1652384242115,
   :block/updated-at 1652384242115}
@@ -115,9 +115,12 @@
  {:block/name "tson glossary",
   :block/created-at 1660070440622,
   :block/updated-at 1667802461840}
+ {:block/name "tson schema",
+  :block/created-at 1667875043432,
+  :block/updated-at 1667879715874}
  {:block/name "tson specification",
   :block/created-at 1667776350030,
-  :block/updated-at 1667784749433}
+  :block/updated-at 1667874593871}
  {:block/name "tsonify",
   :block/created-at 1652428226302,
   :block/updated-at 1667805684154}

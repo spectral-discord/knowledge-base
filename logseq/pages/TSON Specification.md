@@ -6,7 +6,8 @@
   | sets | | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
 - ## Tuning Systems
     id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
-	collapsed:: true
+  	collapsed:: true
+  collapsed:: true
 	- {{embed ((17e6ebb8-5570-4191-b7e4-06f9f5e616a9))}}
 	    | Key | Type | Examples |
 	    |-|-|-|
@@ -82,58 +83,102 @@
 		    
 		  If both are defined, you can also provide a boolean, `override scale spectra`, which determines whether the spectrum defined in the set member should be used instead of any spectra that are declared in the tuning's scales.
 		    
-		  To include a spectrum or tuning in a set, the tuning or spectra must be defined in their respective arrays, and you must reference its `id` parameter, which must be a unique value.
+		  To include a spectrum or tuning in a set, the tuning or spectra must be defined in their respective arrays, and you must reference its `id` parameter.
 		    
 		    | Key | Alternatives | Type | Examples |
 		    |-|-|-|-|
 		    | tuning system | tuning | String | `1`, `My Special Tuning` |
 		    | spectrum | | String | `1`, `My Special Spectrum` |
 		    | override scale spectra | | Boolean | `true`, `false` |
-- ## Example TSONs
-    collapsed:: true
+- ## Example TSON
+  collapsed:: true
 	- ```yaml
-	    Tuning Systems
+	  tuning systems:
 	    - name: 12edo
-	        scales
-	        - reference frequency: 440 hz
-	            repeat ratio: 2.0
-	            notes
+	      id: 1
+	      scales:
+	        - reference: 440 hz
+	          repeat ratio: 2.0
+	          notes:
 	            - frequency ratio: 1
-	                name: A
+	              name: A
 	            - ratio: 2^(1/12)
-	                name: [ A#, Bb ]
+	              name: [ A#, Bb ]
 	            # etc...
-	    - name: JI - BP-edo
-	        scales
-	        - reference: 440
-	            repeat: 2
-	            max frequency: 880 hz
-	            notes
+	    - name: JI — BP-edo (13ed3) — 12ed2
+	      description: |
+	        <800 Hz 		 —  12-tone just intonation
+	        800 - 2400 Hz  —  Bohlen-Pierce equal temperament
+	        >2400 Hz		 —  12-tone equal temperament
+	      id: 2
+	      scales:
+	        - reference: 
+	            frequency: 400
+	            note: reffy
+	          repeat: 2
+	          max frequency: 800 hz
+	          notes:
+	            - 1
 	            - ratio: 3/2
-	                name: ref
-	            - [ 4/3, 5/3 ]
+	            - frequency ratio: 4 / 3
+	              name: reffy
 	            # etc...
-	        - reference: 880
-	            repeat: 3
-	            min: 880
-	            notes
+	        - reference: 
+	            frequency: 800
+	          repeat: 3 # The min/max values won't let it repeat actually... but comments are allowed!
+	          min: 800
+	          max: 2400
+	          spectrum: whatev
+	          notes:
+	            - 1
 	            - 3^(1/13)
 	            # etc...
-	    
-	    Spectra
+	        - reference: 
+	            frequency: 2400
+	          repeat: 2
+	          minimum: 2400
+	          notes:
+	            - 1
+	            - 2^(1/12)
+	            # etc...
+	  
+	  spectra:
 	    - name: harmonic
-	        overtones
+	      id: 1
+	      partials:
 	        - frequency ratio: 1
-	            amplitude weight: 1
+	          amplitude weight: 1
 	        - ratio: 2
-	            weight: 1/2
+	          weight: 1/2
 	        # etc...
-	        # TBD
-	        # - noise profile
-	    
-	    Instruments
-	    # TBD
-	    
-	    Sets
-	    # TBD
-	    ```
+	    - name: odds only
+	      id: whatev
+	      partials:
+	        - frequency ratio: 1
+	          amplitude weight: 1
+	        - ratio: 2
+	          weight: 1/2
+	        # etc...
+	    - name: some inharmonic
+	      id: 2
+	      partials:
+	        - frequency ratio: 1
+	          weight: 1.1
+	        - ratio: 1.78
+	          amplitude weight: 2.7 / 3.4
+	        # etc...
+	  
+	  sets:
+	    - id: cool set
+	    	name: First one then the other
+	    	members:
+	        - tuning: 1
+	          spectrum: 1
+	        - tuning: 2
+	          spectrum: 1
+	        - tuning: 2
+	          spectrum: 2
+	          override scale spectra: true
+	          
+	  
+	  ```
