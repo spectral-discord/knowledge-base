@@ -484,7 +484,7 @@ html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
   border-color: var(--ls-border-color);
 }
 
-.pb-2 {
-  border-width: 1px;
+.embed-block, .embed-page {
+  border-left-width: 2px;
   border-color: var(--ls-border-color);
 }
