@@ -647,11 +647,11 @@ html[data-theme="light"] *:is(.block-highlight, .content .selected) {
 }
 
 html[data-theme="light"] .block-control:hover {
-	color: 					var(--cl-steelgray);
+	color: 					var(--cl-boulder);
 }
 
 html[data-theme="light"] .block-control {
-	color: 					var(--cl-boulder);
+	color: 					var(--cl-magnesium);
 }
 
 html[data-theme="light"] .block-marker:hover {

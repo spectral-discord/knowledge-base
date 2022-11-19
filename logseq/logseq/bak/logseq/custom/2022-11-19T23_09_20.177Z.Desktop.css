@@ -647,11 +647,11 @@ html[data-theme="light"] *:is(.block-highlight, .content .selected) {
 }
 
 html[data-theme="light"] .block-control:hover {
-	color: 					var(--cl-steelgray);
+	color: 					var(--cl-magnesium);
 }
 
 html[data-theme="light"] .block-control {
-	color: 					var(--cl-boulder);
+	color: 					var(--cl-iron);
 }
 
 html[data-theme="light"] .block-marker:hover {
@@ -733,7 +733,7 @@ html[data-theme="light"] .brackets {
 }
 
 html[data-theme="light"] a:hover>.bullet-container {
-	background-color: 		var(--cl-magnesium);
+	background-color: 		var(--cl-athens);
 }
 
 html[data-theme="light"] .ls-block .bullet {
@@ -741,7 +741,7 @@ html[data-theme="light"] .ls-block .bullet {
 }
 
 html[data-theme="light"] .bullet-container.bullet-closed {
-	background-color: 		var(--cl-magnesium);
+	background-color: 		var(--cl-athens);
 }
 
 html[data-theme="light"] button:hover {
@@ -1560,10 +1560,6 @@ html[data-theme="light"] #left-sidebar .nav-header > div a:hover {
 	border-radius: 			5px;
 }
 
-html[data-theme="light"] #left-sidebar .nav-header > div a:hover svg {
-	color: 		var(--cl-white);
-}
-
 html[data-theme="light"] #left-sidebar .nav-header > div a {
 	background-color: 		transparent;
 	border-top: 			transparent;
@@ -1670,6 +1666,10 @@ html[data-theme="light"] #left-sidebar .recent div.header {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			0px;
+}
+
+html[data-theme="light"] #left-sidebar .recent div.header:hover svg {
+	fill: 		var(--cl-white);
 }
 
 html[data-theme="light"] #left-sidebar .recent div.header:hover .ti {
@@ -2344,8 +2344,4 @@ html[data-theme="light"] .zotero-settings .form-select {
 	border-left: 			1px solid var(--cl-athens);
 	border-radius: 			5px;
 	color: 					var(--cl-mineshaft);
-}
-
-html[data-theme="light"] .left-sidebar-inner .create {
-  background-image: none;
 }
