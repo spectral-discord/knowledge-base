@@ -17,8 +17,8 @@
   --green: #17ffa6;
   --purple: #ff2cf1;
   --purple-hover: #992293;
-  --cyan: #0098df;
-  --cyan-hover: #087eb4;
+  --cyan: #05aefc;
+  --cyan-hover: #048ccb;
   --pink: #ff2e97;
   --pink-hover: #ee0077;
 
@@ -27,7 +27,7 @@
   --ls-page-text-size: 16px;
   --ls-page-title-size: 36px;
   --ls-font-family: 'avenir next',avenir, 'Nunito Sans';
-  --ls-font-weight: 300;
+  --ls-font-weight: 350;
   --ls-font-letter-spacing: 0.002em;
   --ls-font-line-height: 1.5;
 
