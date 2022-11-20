@@ -24,7 +24,7 @@
 
   --ls-tag-text-opacity: 0.8;
   --ls-tag-text-hover-opacity: 0.8;
-  --ls-page-text-size: 17px;
+  --ls-page-text-size: 16px;
   --ls-page-title-size: 36px;
   --ls-font-family: 'avenir next regular', avenir, 'Nunito Sans';
   --ls-font-weight: 300;
@@ -39,8 +39,8 @@
 html[data-theme=light] {
 	--cl-black:			#000;
 	--cl-codgrey: 		#2e3234;
-	--cl-mineshaft: 	#333333;
-	--cl-steelgray: 	#414747;
+	--cl-mineshaft: 	#171717;
+	--cl-steelgray: 	#2b2f2f;
 	--cl-jumbo: 		#888888;
 	--cl-boulder: 		#7c7d7c;
 	--cl-stardust: 		#9fa1a0;

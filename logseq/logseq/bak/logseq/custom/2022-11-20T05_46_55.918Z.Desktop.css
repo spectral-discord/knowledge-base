@@ -24,7 +24,7 @@
 
   --ls-tag-text-opacity: 0.8;
   --ls-tag-text-hover-opacity: 0.8;
-  --ls-page-text-size: 17px;
+  --ls-page-text-size: 16px;
   --ls-page-title-size: 36px;
   --ls-font-family: 'avenir next regular', avenir, 'Nunito Sans';
   --ls-font-weight: 300;
@@ -39,12 +39,12 @@
 html[data-theme=light] {
 	--cl-black:			#000;
 	--cl-codgrey: 		#2e3234;
-	--cl-mineshaft: 	#333333;
-	--cl-steelgray: 	#414747;
+	--cl-mineshaft: 	#171717;
+	--cl-steelgray: 	#2b2f2f;
 	--cl-jumbo: 		#888888;
 	--cl-boulder: 		#7c7d7c;
 	--cl-stardust: 		#9fa1a0;
-	--cl-magnesium: 	#b4b4b4;
+	--cl-magnesium: 	#888888;
 	--cl-silver: 		#bfbfbf;
 	--cl-pumice: 		#c6c6c6;
 	--cl-alto: 			#c8c8c8;
@@ -725,7 +725,7 @@ html[data-theme="light"] blockquote {
 	border-left: 			2px solid var(--cl-mandy);
 	border-radius: 			0px;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] .brackets {
@@ -891,13 +891,13 @@ html[data-theme="light"]
 html[data-theme="light"] .extensions__code-lang {
 	background-color: 		transparent;
 	color: 					var(--cl-stardust);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] *:is(#main-content-container, #right-sidebar) {
 	background-color: 		var(--cl-alabaster);
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 }
 
@@ -945,7 +945,7 @@ html[data-theme="light"] .fade-link {
 html[data-theme="light"] *:is(.editor-inner .uniline-block.h1:not(.block-ref *), html[data-theme="light"] .editor-inner .h1:not(.block-ref *), html[data-theme="light"] .ls-block h1:not(.block-ref *)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1.3rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
@@ -955,7 +955,7 @@ html[data-theme="light"] *:is(.editor-inner .uniline-block.h1:not(.block-ref *),
 html[data-theme="light"] *:is(.editor-inner .uniline-block.h2:not(.block-ref *), html[data-theme="light"] .editor-inner .h2:not(.block-ref *), html[data-theme="light"] .ls-block h2:not(.block-ref *)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1.2rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
@@ -963,7 +963,7 @@ html[data-theme="light"] *:is(.editor-inner .uniline-block.h2:not(.block-ref *),
 
 html[data-theme="light"] *:is(.editor-inner .uniline-block.h3:not(.block-ref *), html[data-theme="light"] .editor-inner .h3:not(.block-ref *), html[data-theme="light"] .ls-block h3:not(.block-ref *)) {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1.1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
@@ -971,7 +971,7 @@ html[data-theme="light"] *:is(.editor-inner .uniline-block.h3:not(.block-ref *),
 
 html[data-theme="light"] *:is(.editor-inner .uniline-block.h4:not(.block-ref *), html[data-theme="light"] .editor-inner .h4:not(.block-ref *), html[data-theme="light"] .ls-block h4:not(.block-ref *)) {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
@@ -979,7 +979,7 @@ html[data-theme="light"] *:is(.editor-inner .uniline-block.h4:not(.block-ref *),
 
 html[data-theme="light"] *:is(.editor-inner .uniline-block.h5:not(.block-ref *), html[data-theme="light"] .editor-inner .h5:not(.block-ref *), html[data-theme="light"] .ls-block h5:not(.block-ref *)) {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
@@ -987,7 +987,7 @@ html[data-theme="light"] *:is(.editor-inner .uniline-block.h5:not(.block-ref *),
 
 html[data-theme="light"] *:is(.editor-inner .uniline-block.h6:not(.block-ref *), html[data-theme="light"] .editor-inner .h6:not(.block-ref *), html[data-theme="light"] .ls-block h6:not(.block-ref *))  {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
@@ -1035,7 +1035,7 @@ html[data-theme="light"] #import-roam, #import-opml {
 
 html[data-theme="light"] .page-hierachy h2 {
 	color: 					var(--cl-jumbo);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				0.9em;
 	font-style: 			normal;
 	font-weight: 			500;
@@ -1074,7 +1074,7 @@ html[data-theme="light"] .dsl-query .custom-query {
 	border-left: 			1px solid var(--cl-gainsboro);
 	border-radius: 			0px;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] .custom-query .color-level {
@@ -1128,7 +1128,7 @@ html[data-theme="light"] .query-title {
 	border-left: 			transparent;
 	border-radius: 			0px;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] #main-content-container::-webkit-scrollbar-track {
@@ -1148,7 +1148,7 @@ html[data-theme="light"] a.tag:hover {
 	border-left: 			transparent;
 	border-radius: 			15px;
 	color: 					var(--cl-wildsand);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	opacity: 				1;
 }
@@ -1161,7 +1161,7 @@ html[data-theme="light"] a.tag {
 	border-left: 			transparent;
 	border-radius: 			15px;
 	color: 					var(--cl-wildsand);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	opacity: 				1;
 }
@@ -1192,14 +1192,14 @@ html[data-theme="light"] .timestamp-label {
 
 html[data-theme="light"] .cp__sidebar-main-content h1.title {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1.9rem;
 	font-style: 			normal;
 	font-weight: 			500;
 }
 
 html[data-theme="dark"] .cp__sidebar-main-content h1.title {
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1.9rem;
 	font-style: 			normal;
 	font-weight: 			500;
@@ -1239,7 +1239,7 @@ html[data-theme="light"] #custom-context-menu .menu-link {
 	border-left: 			transparent;
 	border-radius: 			5px!important;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 }
 
@@ -1302,7 +1302,7 @@ html[data-theme="light"] *:is(#left-sidebar, #app-container) .dropdown-wrapper a
 	border-left: 			transparent;
 	border-radius: 			5px!important;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 }
 
@@ -1396,13 +1396,13 @@ html[data-theme="light"] hr {
 
 html[data-theme="light"] p {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 }
 
 html[data-theme="light"] #root>div {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 }
 
@@ -1412,7 +1412,7 @@ html[data-theme="light"] a svg {
 
 html[data-theme="light"] #journals .text-4xl {
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1.3rem;
 	font-style: 			normal;
 	font-weight: 			500;
@@ -1449,7 +1449,7 @@ html[data-theme="light"] #left-sidebar .favorites ul .favorite-item a {
 	border-left: 			transparent;
 	border-radius: 			5px;
 	color: 					var(--cl-silver);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 }
 
@@ -1473,7 +1473,7 @@ html[data-theme="light"] #left-sidebar .favorites div.header {
 
 html[data-theme="light"] #left-sidebar .favorites div.header a {
 	color: 					var(--cl-silver);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-weight: 			400;
 	opacity: 				1!important;
@@ -1539,7 +1539,7 @@ html[data-theme="light"] #left-sidebar nav[aria-label='Sidebar'] div.relative a:
 
 html[data-theme="light"] #left-sidebar nav[aria-label='Sidebar'] div.relative a span {
 	color: 					var(--cl-silver);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-weight: 			400;
 }
@@ -1590,7 +1590,7 @@ html[data-theme="light"] #left-sidebar .nav-header > div a:hover span {
 
 html[data-theme="light"] #left-sidebar .nav-header > div a span {
 	color: 					var(--cl-silver);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-weight: 			400;
 }
@@ -1631,7 +1631,7 @@ html[data-theme="light"] #left-sidebar .new-page a.item:hover span {
 
 html[data-theme="light"] #left-sidebar .new-page a.item span {
 	color: 					var(--cl-silver);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-weight: 			400;
 }
 
@@ -1653,7 +1653,7 @@ html[data-theme="light"] #left-sidebar .recent ul .recent-item a {
 	border-left: 			transparent;
 	border-radius: 			5px;
 	color: 					var(--cl-silver);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 }
 
@@ -1689,7 +1689,7 @@ html[data-theme="light"] #left-sidebar .recent div.header:hover a {
 
 html[data-theme="light"] #left-sidebar .recent div.header a {
 	color: 					var(--cl-silver);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-weight: 			400;
 	opacity: 				1!important;
@@ -1771,7 +1771,7 @@ html[data-theme="light"] #main-content-container .absolute-modal a.menu-link {
 	border-left: 			transparent;
 	border-radius: 			5px;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] #main-content-container .absolute-modal a.menu-link.chosen .block-parents a, #main-content-container  .absolute-modal a.menu-link.chosen .block-parents span {
@@ -1843,7 +1843,7 @@ html[data-theme="light"] .ti-filter {
 
 html[data-theme="light"] .references .foldable-title h2 {
 	color: 					var(--cl-magnesium);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-style: 			normal;
 	font-weight: 			500;
@@ -1886,7 +1886,7 @@ html[data-theme="light"] #right-sidebar  {
 	background-color: 		var(--cl-alabaster);
 	border-left: 			1px solid var(--cl-athens);
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] .cp__sidebar-help-btn>inner {
@@ -1949,7 +1949,7 @@ html[data-theme="light"] #right-sidebar a.toggle {
 
 html[data-theme="light"] #right-sidebar .cp__right-sidebar-topbar {
 	background-color: 		var(--cl-alabaster);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] .absolute-modal .ui__ac-group-name {
@@ -1997,7 +1997,7 @@ html[data-theme="light"] .cp__palette a.menu-link, .cp__palette a.menu-link p {
 	border-left: 			transparent;
 	border-radius: 			5px!important;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 }
 
 html[data-theme="light"] .cp__palette a.menu-link.chosen code, .cp__palette a.menu-link.chosen:hover code {
@@ -2202,7 +2202,7 @@ html[data-theme="light"] .tippy-tooltip {
 html[data-theme="light"] .tippy-tooltip h2 {
 	border-bottom: 			transparent;
 	color: 					var(--cl-mineshaft);
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-size: 				1.2rem;
 	font-style: 			normal;
 	font-weight: 			500;
@@ -2221,7 +2221,7 @@ html[data-theme="light"] .tippy-wrapper {
 	background-color: 		transparent;
 	border-radius: 			10px;
 	color: 					var(--cl-mineshaft)!important;
-	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
 	font-weight: 			400!important;
 }
 

@@ -39,12 +39,12 @@
 html[data-theme=light] {
 	--cl-black:			#000;
 	--cl-codgrey: 		#2e3234;
-	--cl-mineshaft: 	#333333;
+	--cl-mineshaft: 	#171717;
 	--cl-steelgray: 	#414747;
 	--cl-jumbo: 		#888888;
 	--cl-boulder: 		#7c7d7c;
 	--cl-stardust: 		#9fa1a0;
-	--cl-magnesium: 	#b4b4b4;
+	--cl-magnesium: 	#888888;
 	--cl-silver: 		#bfbfbf;
 	--cl-pumice: 		#c6c6c6;
 	--cl-alto: 			#c8c8c8;
