@@ -16,7 +16,7 @@
   --yellow: #ffd400;
   --green: #17ffa6;
   --purple: #ff2cf1;
-  --purple-hover: #992293;
+  --purple-hover: #c636be;
   --cyan: #05aefc;
   --cyan-hover: #048ccb;
   --pink: #ff2e97;
@@ -2294,8 +2294,8 @@ html[data-theme="light"] .left-sidebar-inner .create {
   background-image: none;
 }
 
-html[data-theme="light"] html[data-theme="dark"] a.tag {
-  background: var(--purple);
+html[data-theme="light"] a.tag {
+  background: var(--comment);
   border-radius: 3px 3px 3px 3px;
   padding: 0px 3px;
   color: #000;
@@ -2303,7 +2303,21 @@ html[data-theme="light"] html[data-theme="dark"] a.tag {
   font-family: var(--ls-font-family);
 }
 
-a.tag:hover {
-  background: var(--purple-hover);
+html[data-theme="light"] a.tag:hover {
+  background: var(--cyan-hover);
   color: #000;
 }
+
+html[data-theme="dark"] a.tag {
+	background: var(--comment);
+	border-radius: 3px 3px 3px 3px;
+	padding: 0px 3px;
+	color: #000;
+	font-weight: 400;
+	font-family: var(--ls-font-family);
+  }
+  
+  html[data-theme="dark"] a.tag:hover {
+	background: var(--cyan-hover);
+	color: #000;
+  }

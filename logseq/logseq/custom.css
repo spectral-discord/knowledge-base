@@ -2295,29 +2295,29 @@ html[data-theme="light"] .left-sidebar-inner .create {
 }
 
 html[data-theme="light"] a.tag {
-  background: var(--purple);
+  background: var(--cl-valencia);
   border-radius: 3px 3px 3px 3px;
   padding: 0px 3px;
-  color: #000;
+  color: var(--cl-alabaster);
   font-weight: 400;
   font-family: var(--ls-font-family);
 }
 
 html[data-theme="light"] a.tag:hover {
-  background: var(--purple-hover);
-  color: #000;
+  background: var(--cl-mandy);
+  color: var(--cl-alabaster);
 }
 
 html[data-theme="dark"] a.tag {
-	background: var(--purple);
+	background: var(--comment);
 	border-radius: 3px 3px 3px 3px;
 	padding: 0px 3px;
-	color: #000;
+	color: var(--cl-alabaster);
 	font-weight: 400;
 	font-family: var(--ls-font-family);
   }
   
   html[data-theme="dark"] a.tag:hover {
-	background: var(--purple-hover);
-	color: #000;
-  }
+	background: var(--cyan-hover);
+	color: var(--cl-alabaster);
+}
