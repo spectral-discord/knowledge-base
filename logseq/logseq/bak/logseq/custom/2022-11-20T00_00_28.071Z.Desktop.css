@@ -647,11 +647,11 @@ html[data-theme="light"] *:is(.block-highlight, .content .selected) {
 }
 
 html[data-theme="light"] .block-control:hover {
-	color: 					var(--cl-magnesium);
+	color: 					var(--cl-steelgray);
 }
 
 html[data-theme="light"] .block-control {
-	color: 					var(--cl-iron);
+	color: 					var(--cl-boulder);
 }
 
 html[data-theme="light"] .block-marker:hover {
@@ -733,7 +733,7 @@ html[data-theme="light"] .brackets {
 }
 
 html[data-theme="light"] a:hover>.bullet-container {
-	background-color: 		var(--cl-athens);
+	background-color: 		var(--cl-magnesium);
 }
 
 html[data-theme="light"] .ls-block .bullet {
@@ -741,7 +741,7 @@ html[data-theme="light"] .ls-block .bullet {
 }
 
 html[data-theme="light"] .bullet-container.bullet-closed {
-	background-color: 		var(--cl-athens);
+	background-color: 		var(--cl-magnesium);
 }
 
 html[data-theme="light"] button:hover {
