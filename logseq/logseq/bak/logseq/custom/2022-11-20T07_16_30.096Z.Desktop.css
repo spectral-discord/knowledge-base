@@ -16,7 +16,7 @@
   --yellow: #ffd400;
   --green: #17ffa6;
   --purple: #ff2cf1;
-  --purple-hover: #992293;
+  --purple-hover: #c636be;
   --cyan: #05aefc;
   --cyan-hover: #048ccb;
   --pink: #ff2e97;
@@ -499,8 +499,8 @@ html[data-theme="dark"] .bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown
   border-color: var(--ls-border-color);
 }
 
-html[data-theme="dark"] .embed-block, html[data-theme="dark"] .embed-page {
-  border-left-width: 2px;
+html[data-theme="dark"] .embed-block, html[data-theme="dark"] .embed-page, html[data-theme="dark"] .px-2 .flex .initial > div {
+  border-left-width: 1px;
   border-color: var(--ls-border-color);
   border-radius: 0;
 }
@@ -2295,29 +2295,29 @@ html[data-theme="light"] .left-sidebar-inner .create {
 }
 
 html[data-theme="light"] a.tag {
-  background: var(--purple);
+  background: var(--cl-valencia);
   border-radius: 3px 3px 3px 3px;
   padding: 0px 3px;
-  color: #000;
+  color: var(--cl-alabaster);
   font-weight: 400;
   font-family: var(--ls-font-family);
 }
 
 html[data-theme="light"] a.tag:hover {
-  background: var(--purple-hover);
-  color: #000;
+  background: var(--cl-mandy);
+  color: var(--cl-alabaster);
 }
 
 html[data-theme="dark"] a.tag {
-	background: var(--purple);
+	background: var(--comment);
 	border-radius: 3px 3px 3px 3px;
 	padding: 0px 3px;
-	color: #000;
+	color: var(--cl-alabaster);
 	font-weight: 400;
 	font-family: var(--ls-font-family);
   }
   
   html[data-theme="dark"] a.tag:hover {
-	background: var(--purple-hover);
-	color: #000;
-  }
+	background: var(--cyan-hover);
+	color: var(--cl-alabaster);
+}

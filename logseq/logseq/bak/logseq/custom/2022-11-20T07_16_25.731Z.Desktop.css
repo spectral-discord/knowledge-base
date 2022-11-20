@@ -499,7 +499,7 @@ html[data-theme="dark"] .bg-base-3, .ui__modal-panel, .absolute-modal, .dropdown
   border-color: var(--ls-border-color);
 }
 
-html[data-theme="dark"] .embed-block, html[data-theme="dark"] .embed-page {
+html[data-theme="dark"] .embed-block, html[data-theme="dark"] .embed-page, html[data-theme="dark"] .px-2 .flex .initial {
   border-left-width: 2px;
   border-color: var(--ls-border-color);
   border-radius: 0;
@@ -2295,7 +2295,7 @@ html[data-theme="light"] .left-sidebar-inner .create {
 }
 
 html[data-theme="light"] a.tag {
-  background: var(--comment);
+  background: var(--cl-valencia);
   border-radius: 3px 3px 3px 3px;
   padding: 0px 3px;
   color: var(--cl-alabaster);
@@ -2304,8 +2304,8 @@ html[data-theme="light"] a.tag {
 }
 
 html[data-theme="light"] a.tag:hover {
-  background: var(--cyan-hover);
-  color: #000;
+  background: var(--cl-mandy);
+  color: var(--cl-alabaster);
 }
 
 html[data-theme="dark"] a.tag {
@@ -2319,5 +2319,5 @@ html[data-theme="dark"] a.tag {
   
   html[data-theme="dark"] a.tag:hover {
 	background: var(--cyan-hover);
-	color: #000;
-  }
+	color: var(--cl-alabaster);
+}
