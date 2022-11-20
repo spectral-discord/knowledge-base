@@ -17,17 +17,17 @@
   --green: #17ffa6;
   --purple: #ff2cf1;
   --purple-hover: #992293;
-  --cyan: #0098df;
-  --cyan-hover: #087eb4;
+  --cyan: #05aefc;
+  --cyan-hover: #048ccb;
   --pink: #ff2e97;
   --pink-hover: #ee0077;
 
   --ls-tag-text-opacity: 0.8;
   --ls-tag-text-hover-opacity: 0.8;
-  --ls-page-text-size: 16px;
+  --ls-page-text-size: 17px;
   --ls-page-title-size: 36px;
-  --ls-font-family: 'avenir next',avenir, 'Nunito Sans';
-  --ls-font-weight: 300;
+  --ls-font-family: 'avenir next', avenir, 'Nunito Sans';
+  --ls-font-weight: 250;
   --ls-font-letter-spacing: 0.002em;
   --ls-font-line-height: 1.5;
 
@@ -1150,7 +1150,6 @@ html[data-theme="light"] a.tag:hover {
 	color: 					var(--cl-wildsand);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
-	font-weight: 			;
 	opacity: 				1;
 }
 
@@ -1164,7 +1163,6 @@ html[data-theme="light"] a.tag {
 	color: 					var(--cl-wildsand);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
-	font-weight: 			;
 	opacity: 				1;
 }
 
@@ -1195,14 +1193,14 @@ html[data-theme="light"] .timestamp-label {
 html[data-theme="light"] .cp__sidebar-main-content h1.title {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
-	font-size: 				1.5rem;
+	font-size: 				1.9rem;
 	font-style: 			normal;
 	font-weight: 			500;
 }
 
 html[data-theme="dark"] .cp__sidebar-main-content h1.title {
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
-	font-size: 				1.5rem;
+	font-size: 				1.9rem;
 	font-style: 			normal;
 	font-weight: 			500;
 }
