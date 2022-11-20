@@ -1,4 +1,4 @@
-- ***TSON*** (Tuning-Spectrum Object Notation) is a YAML-based data format for describing musical tuning and sound spectrum information.
+- **TSON** (Tuning-Spectrum Object Notation) is a YAML-based data format for describing musical tuning and sound spectrum information.
 	- #### Why another tuning file/data standard?
 		- [Valid question.](((629168a2-5251-438a-983c-1c1a993aeaeb)))
 		- Existing formats have too many limitations...
