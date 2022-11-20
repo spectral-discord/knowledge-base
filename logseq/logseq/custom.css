@@ -16,7 +16,7 @@
   --yellow: #ffd400;
   --green: #17ffa6;
   --purple: #ff2cf1;
-  --purple-hover: #992293;
+  --purple-hover: #c636be;
   --cyan: #05aefc;
   --cyan-hover: #048ccb;
   --pink: #ff2e97;
@@ -286,14 +286,6 @@ html[data-theme="dark"] .menu-link:hover {
   color: var(--white);
 }
 
-html[data-theme="dark"] a.tag {
-  background: var(--purple);
-  border-radius: 3px 3px 3px 3px;
-  padding: 0px 3px;
-  color: var(--dark-background);
-  font-weight: 400;
-}
-
 html[data-theme="dark"] .tippy-popper .tippy-tooltip.customized-theme {
   border-radius: 0px;
   border-width: 1px;
@@ -360,11 +352,6 @@ html[data-theme="dark"] .block-control {
 
 html[data-theme="dark"] .block-control:hover {
   color: var(--cyan-hover); 
-}
-
-html[data-theme="dark"] a.tag:hover {
-  background: transparent;
-  color: (--purple);
 }
 
 /*
@@ -605,26 +592,6 @@ html[data-theme="light"] .cards-review {
 	border-radius: 			2px;
 	box-shadow: 			none!important;
 	--webkit-box-shadow: 	none!important;
-}
-
-html[data-theme="light"] .page-reference[data-ref=card].tag:hover, a[data-ref=card].tag:hover {
-	background-color: 		transparent;
-	border-top: 			1px solid var(--cl-gallery);
-	border-right: 			1px solid var(--cl-gallery);
-	border-bottom: 			1px solid var(--cl-gallery);
-	border-left: 			1px solid var(--cl-gallery);
-	border-radius: 			15px;
-	color: 					var(--cl-iron)!important;
-}
-
-html[data-theme="light"] .page-reference[data-ref=card].tag, a[data-ref=card].tag {
-	background-color: 		transparent;
-	border-top: 			1px solid var(--cl-gallery);
-	border-right: 			1px solid var(--cl-gallery);
-	border-bottom: 			1px solid var(--cl-gallery);
-	border-left: 			1px solid var(--cl-gallery);
-	border-radius: 			15px;
-	color: 					var(--cl-iron)!important;
 }
 
 html[data-theme="light"] .cp__right-sidebar .cards-title, .ui__modal .cards-title, .cards-review .cards-title {
@@ -1138,32 +1105,6 @@ html[data-theme="light"] #main-content-container::-webkit-scrollbar-track {
 html[data-theme="light"] #main-content-container::-webkit-scrollbar-thumb {
 	background-color: 		var(--cl-boulder);
 	border-radius: 			8px;
-}
-
-html[data-theme="light"] a.tag:hover {
-	background-color: 		var(--cl-gull);
-	border-top: 			transparent;
-	border-right: 			transparent;
-	border-bottom: 			transparent;
-	border-left: 			transparent;
-	border-radius: 			15px;
-	color: 					var(--cl-wildsand);
-	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
-	font-size: 				1rem;
-	opacity: 				1;
-}
-
-html[data-theme="light"] a.tag {
-	background-color: 		var(--cl-gull);
-	border-top: 			transparent;
-	border-right: 			transparent;
-	border-bottom: 			transparent;
-	border-left: 			transparent;
-	border-radius: 			15px;
-	color: 					var(--cl-wildsand);
-	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
-	font-size: 				1rem;
-	opacity: 				1;
 }
 
 html[data-theme="light"] input::selection {
@@ -2352,3 +2293,31 @@ html[data-theme="light"] .zotero-settings .form-select {
 html[data-theme="light"] .left-sidebar-inner .create {
   background-image: none;
 }
+
+html[data-theme="light"] a.tag {
+  background: var(--purple);
+  border-radius: 3px 3px 3px 3px;
+  padding: 0px 3px;
+  color: #000;
+  font-weight: 400;
+  font-family: var(--ls-font-family);
+}
+
+html[data-theme="light"] a.tag:hover {
+  background: var(--purple-hover);
+  color: #000;
+}
+
+html[data-theme="dark"] a.tag {
+	background: var(--purple);
+	border-radius: 3px 3px 3px 3px;
+	padding: 0px 3px;
+	color: #000;
+	font-weight: 400;
+	font-family: var(--ls-font-family);
+  }
+  
+  html[data-theme="dark"] a.tag:hover {
+	background: var(--purple-hover);
+	color: #000;
+  }

@@ -40,11 +40,11 @@ html[data-theme=light] {
 	--cl-black:			#000;
 	--cl-codgrey: 		#2e3234;
 	--cl-mineshaft: 	#171717;
-	--cl-steelgray: 	#2b2f2f;
+	--cl-steelgray: 	#414747;
 	--cl-jumbo: 		#888888;
 	--cl-boulder: 		#7c7d7c;
 	--cl-stardust: 		#9fa1a0;
-	--cl-magnesium: 	#5d5d5d;
+	--cl-magnesium: 	#888888;
 	--cl-silver: 		#bfbfbf;
 	--cl-pumice: 		#c6c6c6;
 	--cl-alto: 			#c8c8c8;
@@ -286,12 +286,18 @@ html[data-theme="dark"] .menu-link:hover {
   color: var(--white);
 }
 
-html[data-theme="dark"] a.tag {
+a.tag {
   background: var(--purple);
   border-radius: 3px 3px 3px 3px;
   padding: 0px 3px;
-  color: var(--dark-background);
+  color: #000;
   font-weight: 400;
+  font-family: var(--ls-font-family);
+}
+
+a.tag:hover {
+  background: var(--purple-hover);
+  color: #000;
 }
 
 html[data-theme="dark"] .tippy-popper .tippy-tooltip.customized-theme {
@@ -360,11 +366,6 @@ html[data-theme="dark"] .block-control {
 
 html[data-theme="dark"] .block-control:hover {
   color: var(--cyan-hover); 
-}
-
-html[data-theme="dark"] a.tag:hover {
-  background: transparent;
-  color: (--purple);
 }
 
 /*
@@ -605,26 +606,6 @@ html[data-theme="light"] .cards-review {
 	border-radius: 			2px;
 	box-shadow: 			none!important;
 	--webkit-box-shadow: 	none!important;
-}
-
-html[data-theme="light"] .page-reference[data-ref=card].tag:hover, a[data-ref=card].tag:hover {
-	background-color: 		transparent;
-	border-top: 			1px solid var(--cl-gallery);
-	border-right: 			1px solid var(--cl-gallery);
-	border-bottom: 			1px solid var(--cl-gallery);
-	border-left: 			1px solid var(--cl-gallery);
-	border-radius: 			15px;
-	color: 					var(--cl-iron)!important;
-}
-
-html[data-theme="light"] .page-reference[data-ref=card].tag, a[data-ref=card].tag {
-	background-color: 		transparent;
-	border-top: 			1px solid var(--cl-gallery);
-	border-right: 			1px solid var(--cl-gallery);
-	border-bottom: 			1px solid var(--cl-gallery);
-	border-left: 			1px solid var(--cl-gallery);
-	border-radius: 			15px;
-	color: 					var(--cl-iron)!important;
 }
 
 html[data-theme="light"] .cp__right-sidebar .cards-title, .ui__modal .cards-title, .cards-review .cards-title {
@@ -1138,32 +1119,6 @@ html[data-theme="light"] #main-content-container::-webkit-scrollbar-track {
 html[data-theme="light"] #main-content-container::-webkit-scrollbar-thumb {
 	background-color: 		var(--cl-boulder);
 	border-radius: 			8px;
-}
-
-html[data-theme="light"] a.tag:hover {
-	background-color: 		var(--cl-gull);
-	border-top: 			transparent;
-	border-right: 			transparent;
-	border-bottom: 			transparent;
-	border-left: 			transparent;
-	border-radius: 			15px;
-	color: 					var(--cl-wildsand);
-	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
-	font-size: 				1rem;
-	opacity: 				1;
-}
-
-html[data-theme="light"] a.tag {
-	background-color: 		var(--cl-gull);
-	border-top: 			transparent;
-	border-right: 			transparent;
-	border-bottom: 			transparent;
-	border-left: 			transparent;
-	border-radius: 			15px;
-	color: 					var(--cl-wildsand);
-	font-family: 			'avenir next regular',avenir, 'Nunito Sans';
-	font-size: 				1rem;
-	opacity: 				1;
 }
 
 html[data-theme="light"] input::selection {
