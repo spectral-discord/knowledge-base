@@ -59,7 +59,7 @@
   id:: 6296c474-695c-450e-9ecb-d0c2fac4ad30
 	- If a **min frequency** is defined for a scale, then no notes will be generated below that frequency.
 	- This, along with [max frequency](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))), allows you to define frequency ranges in which scales can exist.
-	- This is particularly useful for multi-scale tuning systems in which you may want different scales to occupy different frequency ranges.
+	- This is particularly useful for multi-scale tunings in which you may want different scales to occupy different frequency ranges.
 - #### Note
   id:: 6296c7f7-ddf0-47bc-823c-a717f49b2b63
 	- **Notes** represent a scale's pitches. For [repeating](((6291924c-5500-456e-9cca-6a138f6e16c6))) scales, notes can represent [pitch classes]((https://en.wikipedia.org/wiki/Pitch_class)).
@@ -76,14 +76,13 @@
   id:: 62919243-8c47-4050-b49c-ca654d73e36b
 	- If a **reference note** is defined, then that note will be mapped onto the reference frequency, and all other notes will be mapped relative to the reference note.
 	- *Example*
-	  collapsed:: true
 	  id:: 62f2aa52-df6a-435c-9449-e62c2a2afa86
 		- ```yaml
-		  Tuning System
-		    - scales
+		  tunings:
+		    - scales:
 		      - reference frequency: 300 hz
 		        reference note: ref
-		        notes
+		        notes:
 		          - 1				# 200 hz
 		          - name: ref		# Name is defined so it can be used as a reference note
 		            ratio: 1.5	# 300 hz

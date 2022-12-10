@@ -1,12 +1,11 @@
 - {{embed ((636856ee-ac51-4ebf-ad27-81aab0759717)) }}
-  | Key | Alternatives | Type | Examples |
+  | Key | Type | Examples |
   |-|-|-|-|
-  | tuning systems | tunings | Array <Object> | See the [tuning systems specification](((62911960-76e1-4cb8-81a7-ee92fc8019b8))) |
-  | spectra | | Array <Object> | See the [spectra specification](((6291b083-cb55-4961-8a93-e977afd6dc98))) |
-  | sets | | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
-- ## Tuning Systems
-    id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
-  	collapsed:: true
+  | tunings | Array <Object> | See the [tunings specification](((62911960-76e1-4cb8-81a7-ee92fc8019b8))) |
+  | spectra | Array <Object> | See the [spectra specification](((6291b083-cb55-4961-8a93-e977afd6dc98))) |
+  | sets | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
+- ## Tunings
+  id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
   collapsed:: true
 	- {{embed ((17e6ebb8-5570-4191-b7e4-06f9f5e616a9))}}
 	    | Key | Type | Examples |
@@ -15,7 +14,7 @@
 	    | description | String | `A description might be nice to add` |
 	    | id | String | `1`, `My Tuning`, `63113f49-888a-4948-b896-b7448242a854` |
 	    | scales | Array <Object> | See the [scales specification](((629122d9-4089-4ca0-80af-bf8540b22d82))) |
-	  An `id` must be defined, and it must be a unique value that isn't used by any other tuning systems.
+	  An `id` must be defined, and it must be a unique value that isn't used by any other tunings.
 	    
 	  The only other required parameters are the [reference](((632cd327-c00a-41e2-9a4c-e99fb6fde7c9))) object and the [notes](((62918617-11a6-4911-abd6-d068605aaa73))) array.
 	- ## Scales

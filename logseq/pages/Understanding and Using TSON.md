@@ -1,10 +1,10 @@
-- TSON is designed to hold [Tuning Systems](((62911960-76e1-4cb8-81a7-ee92fc8019b8))), [Spectra](((6291b083-cb55-4961-8a93-e977afd6dc98))), and [Sets](((6291b0c2-024a-45e7-86dc-4d149993c94e)))
+- TSON is designed to hold [Tunings](((62911960-76e1-4cb8-81a7-ee92fc8019b8))), [Spectra](((6291b083-cb55-4961-8a93-e977afd6dc98))), and [Sets](((6291b0c2-024a-45e7-86dc-4d149993c94e)))
   id:: 636856ee-ac51-4ebf-ad27-81aab0759717
   
   At the top level, TSON is just arrays of each.
-- ### Tuning Systems and Scales
+- ### Tunings and Scales
   collapsed:: true
-	- In TSON, tuning systems are made of [scales](((629122d9-4089-4ca0-80af-bf8540b22d82))), and scales are made of [notes](((62918617-11a6-4911-abd6-d068605aaa73))).
+	- In TSON, tunings are made of [scales](((629122d9-4089-4ca0-80af-bf8540b22d82))), and scales are made of [notes](((62918617-11a6-4911-abd6-d068605aaa73))).
 	  id:: 17e6ebb8-5570-4191-b7e4-06f9f5e616a9
 	- Scales are functional and generative in the sense that notes are defined in relation to a [root](((62919617-9d52-416c-be4f-c72edbbbda0f))), and a [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))) is used to generate real frequency values for all of the notes.
 		- *Example*
@@ -19,20 +19,20 @@
 			          - 1.5		# 150 hz
 			          - 1.75		# 175 hz
 			  ```
-	- If using multiple scales in a tuning system, the scales can overlap so that their notes are interlaced.
+	- If a tuning has multiple scales, the scales can overlap so that their notes are interlaced.
 		- *Example*
 		  collapsed:: true
 			- ```yaml
-			  Tuning System
-			    - scales
+			  tunings:
+			    - scales:
 			      - reference frequency: 100 hz
-			        notes
+			        notes:
 			          - 1			# 100 hz
 			          - 1.5		# 150 hz
 			          - 1.75		# 175 hz
 			  
 			      - reference frequency: 80 hz
-			        notes
+			        notes:
 			          - 1 		# 80 hz
 			          - 1.5		# 120 hz
 			          - 2			# 160 hz
@@ -57,19 +57,19 @@
 		- *Example*
 		  collapsed:: true
 			- ```yaml
-			  Tuning System
-			    - scales
+			  tunings:
+			    - scales:
 			      - reference: 100 hz
 			        min: 300 hz
 			        repeat: 2.0
-			        notes
+			        notes:
 			          - 1.0		# 400 hz, 800 hz, 1600 hz, 3200 hz ...
 			          - 1.5		# 300 hz, 600 hz, 1200 hz, 2400 hz ...
 			          - 1.75		# 350 hz, 700 hz, 1400 hz, 2800 hz ...
 			      - reference: 80
 			        max: 300
 			        repeat: 2.5
-			        notes
+			        notes:
 			          - 1			# ... 32 hz, 80 hz, 200 hz
 			          - 1.5		# ... 48 hz, 120 hz, 300 hz
 			          - 2			# ... 64 hz, 160 hz
