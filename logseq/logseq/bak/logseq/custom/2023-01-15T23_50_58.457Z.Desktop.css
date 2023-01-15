@@ -1486,16 +1486,6 @@ html[data-theme="light"] #left-sidebar nav[aria-label='Sidebar'] div.relative a 
 	font-weight: 			400;
 }
 
-html[data-theme="light"] #left-menu, #search-button {
-	background-color: 		transparent;
-	border-top: 			transparent;
-	border-right: 			transparent;
-	border-bottom: 			transparent;
-	border-left: 			transparent;
-	border-radius: 			5px;
-	color: 					var(--cl-stardust);
-}
-
 html[data-theme="light"] #left-sidebar .nav-header > div a:hover {
 	background-color: 		var(--cl-valencia);
 	border-top: 			transparent;
@@ -2174,12 +2164,12 @@ html[data-theme="light"] #head .button {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			5px;
-	color: 					var(--cl-stardust);
+	color: 					var(--cl-iron);
 	opacity: 				1;
 }
 
 html[data-theme="light"] #head .button:hover {
-	color: 					var(--cl-iron);
+	color: 					var(--cl-stardust);
 	opacity: 				1;
 }
 
@@ -2200,13 +2190,22 @@ html[data-theme="light"] #head a.button {
 	background-color: 		transparent;
 	opacity: 				1;
 }
+html[data-theme="light"] #left-menu, #search-button {
+	background-color: 		transparent;
+	border-top: 			transparent;
+	border-right: 			transparent;
+	border-bottom: 			transparent;
+	border-left: 			transparent;
+	border-radius: 			5px;
+	color: 					var(--cl-alabaster)!important;
+}
 
 html[data-theme="light"] .theme-inner:not(.ls-left-sidebar-open) a#left-menu:hover .ti, html[data-theme="light"] .theme-inner:not(.ls-left-sidebar-open) a#search-button:hover .ti {
 	color: 					var(--cl-stardust)!important;
 }
 
 html[data-theme="light"] .theme-inner:not(.ls-left-sidebar-open) a#left-menu .ti, html[data-theme="light"] .theme-inner:not(.ls-left-sidebar-open) a#search-button .ti {
-	color: 					var(--cl-iron)!important;
+	color: 					var(--cl-alabaster)!important;
 }
 
 html[data-theme="light"] .theme-inner:not(.ls-left-sidebar-open) a#left-menu:hover, html[data-theme="light"] .theme-inner:not(.ls-left-sidebar-open) a#search-button:hover {
@@ -2220,7 +2219,7 @@ html[data-theme="light"] .theme-inner:not(.ls-left-sidebar-open) a#left-menu, ht
 }
 
 html[data-theme="light"] .ls-left-sidebar-open a#left-menu:hover .ti, html[data-theme="light"] .ls-left-sidebar-open a#search-button:hover .ti {
-	color: 					var(--cl-iron);
+	color: 					var(--cl-alabaster);
 }
 
 html[data-theme="light"] .ls-left-sidebar-open a#left-menu .ti, html[data-theme="light"] .ls-left-sidebar-open a#search-button .ti {

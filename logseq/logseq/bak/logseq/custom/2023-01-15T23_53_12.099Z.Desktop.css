@@ -2174,12 +2174,12 @@ html[data-theme="light"] #head .button {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			5px;
-	color: 					var(--cl-stardust);
+	color: 					var(--cl-iron);
 	opacity: 				1;
 }
 
 html[data-theme="light"] #head .button:hover {
-	color: 					var(--cl-iron);
+	color: 					var(--cl-stardust);
 	opacity: 				1;
 }
 
