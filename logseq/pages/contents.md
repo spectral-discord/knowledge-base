@@ -5,5 +5,5 @@
 		- [[TSONify]] - TSON SDKs
 		- [Schema]([[TSON Schema]])
 	- [[DisMAL]] - *Dissonance Modeling and Analysis Library*
-	- [[TonalHub]] - Webapp + REST API for archiving and working with tonal systems
+	- [[TonalityLab]] - Webapp + REST API for archiving and working with tonal systems
 - [[Contributing]]

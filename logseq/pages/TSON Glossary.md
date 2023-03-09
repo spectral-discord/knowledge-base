@@ -122,3 +122,7 @@
 	  {{embed ((62ad1b5e-ab92-4f3c-8b69-b37c3f7dc15e))}}
 	- At the moment, TSON only supports [partial distributions](((629bee65-cf76-4a03-a0e9-4862024c7d4e))) for spectral components, but more are planned!
 	  id:: 62f3497b-5de1-4bd2-9d5c-2185c8957281
+- Tuning
+  id:: 640a62ea-e616-4158-a081-aa3ff96736f8
+	- A **tuning** is a scale or set of [scales](((6291ba45-59c1-4071-96b1-5d56a5a0f999))) that can be used construct a set of [notes](((6296c7f7-ddf0-47bc-823c-a717f49b2b63))) with real frequency values.
+	- Tunings may be used in musical compositions or mapped onto musical instruments that can be played (whether acoustic or acoustic-electric instruments via re-synthesis methods, or musical interfaces such as MIDI controllers)

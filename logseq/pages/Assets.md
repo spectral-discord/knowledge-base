@@ -4,5 +4,5 @@
 	- Description: An xkcd webcomic.
 	  Title: "How Standards Proliferate (See: A/C chargers, character encodings, instant messaging, etc)"
 	  Panel 1: "Situation: There are 14 competing standards."
-	  Panel 2: Cueball - "14? Ridiculous! We need to develop one universal standard that covers everyone's use cases." Ponytail - "Yeah!"
+	  Panel 2: Cueball says, "14? Ridiculous! We need to develop one universal standard that covers everyone's use cases." Ponytail responds, "Yeah!"
 	  Panel 3: "(Soon) Situation: There are 15 competing standards."

@@ -1,0 +1,6 @@
+- A #Planned web app with various features for developing and archiving [tuning](((640a62ea-e616-4158-a081-aa3ff96736f8))) and [spectra](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) data.
+- Features will include:
+	- Interfaces for creating and manipulating [[TSON]] data
+	- Interfaces that implement [[DisMAL]] for creating dissonance maps that can be used to construct novel tunings and spectra
+	- A database for storing TSON data
+	- An API for retrieving, modifying, and storing TSON data in the database

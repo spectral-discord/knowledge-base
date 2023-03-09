@@ -10,7 +10,7 @@
 	- Building tunings - ie, calculating real frequency values (in Hz) for all valid notes in a tuning specification
 	- Pairing spectra with tunings and scales
 		- When building tunings, spectrum data can be paired and included with note data
-	- #Planned An interface for the [[TonalHub]] API, for fetching and uploading TSONs, and more!
+	- #Planned An interface for the [[TonalityLab]] API, for fetching and uploading TSONs, and more!
 	- #Planned Spectrum interpolation — Morphing between two spectra across a defined frequency range
 	- #Planned Variables in expressions, for dynamic tunings and spectra.
 		- Predefined variables such as `rootFreq` ([root](((62919617-9d52-416c-be4f-c72edbbbda0f))) frequency, for dynamic scales and spectra that are frequency-dependent)

@@ -23,7 +23,7 @@
 		- Also, TSON is intended to be a focal point for an set of useful microtonal software...
 		  collapsed:: true
 			- [[TSONify]] - open-source SDKs in multiple languages with various features for including TSON support in software projects
-			- [[TonalHub]] #Planned - open-source, self-hostable web app & API for archiving and creating tuning, spectrum, and instrument models
+			- [[TonalityLab]] #Planned - open-source, self-hostable web app & API for archiving and creating tuning, spectrum, and instrument models
 			  collapsed:: true
 				- API and UI for archiving, fetching, and manipulating TSON data
 				- TSON data model versioning
