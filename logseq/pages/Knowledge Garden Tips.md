@@ -14,3 +14,5 @@
 				- But I'm not gonna go on forever...
 - *Knowledge Garden Tip:* Each bullet refers to a "block" of content, which can be viewed independently and referenced or embedded elsewhere in the knowledge garden.
   id:: 62967d4b-ed76-4110-bf14-35e8ae0d4212
+- *Knowledge Garden Tip*: To toggle between light and dark modes, simply tap `t` twice.
+  id:: 6448565a-9c31-4af6-999b-79d7afc7b3a3
