@@ -185,6 +185,8 @@
  :mobile/toolbar-stats {:bold {:counts 1}, :brand-youtube {:counts 0}, :checkbox {:counts 0}, :parentheses {:counts 0}, :command {:counts 0}, :paint {:counts 0}, :list {:counts 0}, :link {:counts 0}, :strikethrough {:counts 0}, :code {:counts 6}, :camera {:counts 0}, :rotate {:counts 18}, :tag {:counts 0}, :brackets {:counts 0}, :italic {:counts 0}, :a-b {:counts 0}, :rotate-clockwise {:counts 3}}
  :feature/enable-flashcards? false
  :feature/enable-whiteboards? false
+ :ui/show-full-blocks? false
+ :ui/auto-expand-block-refs? false
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5

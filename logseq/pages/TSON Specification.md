@@ -4,6 +4,7 @@
   | tunings | Array <Object> | See the [tunings specification](((62911960-76e1-4cb8-81a7-ee92fc8019b8))) |
   | spectra | Array <Object> | See the [spectra specification](((6291b083-cb55-4961-8a93-e977afd6dc98))) |
   | sets | Array <Object> | See the [sets specification](((6291b0c2-024a-45e7-86dc-4d149993c94e))) |
+  | interfaces | Reserved | See the [interfaces description](((6467e3b1-28ec-4bbe-9c5e-6c549c4c90e7))) |
 - ## Tunings
   id:: 62911960-76e1-4cb8-81a7-ee92fc8019b8
   collapsed:: true
@@ -66,8 +67,8 @@
 		    | frequency ratio | ratio | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
 		    | amplitude weight | weight | [Expression](((629146bc-6e1e-4a00-b2a0-5c205cfb23c6))) |
 - ## Sets
-    id:: 6291b0c2-024a-45e7-86dc-4d149993c94e
-    collapsed:: true
+  id:: 6291b0c2-024a-45e7-86dc-4d149993c94e
+  collapsed:: true
 	- {{embed ((63113e04-b1ed-4f89-b615-b012672760d2))}}
 	    | Key | Type | Examples |
 	    |-|-|-|-|
@@ -89,6 +90,10 @@
 		    | tuning | String | `1`, `My Special Tuning` |
 		    | spectrum | String | `1`, `My Special Spectrum` |
 		    | override scale spectra | Boolean | `true`, `false` |
+- ## #Planned Interfaces
+  id:: 6467e3b1-28ec-4bbe-9c5e-6c549c4c90e7
+  collapsed:: true
+	- `interfaces` is a reserved top-level identifier that will be used to store data for mapping tunings to musical interfaces such as midi controllers or physical instruments that can be retuned.
 - ## Example TSON
   collapsed:: true
 	- ```yaml

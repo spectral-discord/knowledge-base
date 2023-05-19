@@ -1,8 +1,8 @@
 - **TSONify** is a set of open-source SDKs that can be used to include TSON support in software.
-	- Currently only JavaScript / TypeScript has been released, but Python, C++, and Rust are #Planned
+	- Currently only JavaScript / TypeScript has been released, but Python, C++, and Rust ports are either #Planned or #In-Progress
 -
 - ### Check out the [GitHub Repo](https://github.com/spectral-discord/TSON)
-- ### #Planned *Documentation in progress...*
+- ### #In-Progress *Documentation in progress...*
 - ## Features
 	- TSON parsing, merging, validation, standardizing, and exporting
 	- Conversion to and from existing tuning formats (.scl, .TUN)

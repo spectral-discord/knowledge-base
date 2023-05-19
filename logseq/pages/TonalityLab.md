@@ -1,6 +1,9 @@
-- #Planned A cross-platform native and web app with various features for developing and archiving [tuning](((640a62ea-e616-4158-a081-aa3ff96736f8))) and [spectra](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) data.
+- #In-Progress A web app with various features for developing and archiving [tuning](((640a62ea-e616-4158-a081-aa3ff96736f8))) and [spectra](((62f2aa52-4de4-4e95-8e5a-a90fa4f99e4e))) data.
 - Features will include (among others):
-	- Interfaces for creating and manipulating [[TSON]] data
-	- Interfaces that implement [[DisMAL]] for creating dissonance maps that can be used to construct novel tunings and spectra
+	- Interfaces for a variety of use cases:
+		- Designing spectra whether by hand or by analyzing audio files
+		- Using [[DisMAL]] models for creating dissonance maps that can be used to develop tuning systems
+		- Designing tuning systems and note mappings for instruments/interfaces
+		- Creating and manipulating [[TSON]] data
 	- A database for storing TSON data
-	- An API for retrieving, modifying, and storing TSON data in the database
+	- An API for running CRUD operations on TSON data, using DisMAL models, etc.
