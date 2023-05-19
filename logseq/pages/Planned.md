@@ -1,1 +1,1 @@
-- Planned and in-progress things get tagged as #Planned and show up here in the linked references!
+- Planned things get tagged as #Planned and show up here in the linked references!
