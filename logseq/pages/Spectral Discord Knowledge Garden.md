@@ -3,7 +3,7 @@
 - [Spectral Discord](https://spectraldiscord.com) is the home for a set of projects by Lina, combining psychoacoustics research with modern audio technologies to create new tools for musical experimentation, performance, and research.
 - The goal is to bring experimental and less-explored areas of music and sound out of academia and into the hands of artists, audio software developers, and independent researchers via free, open-source software tools.
 -
+- {{embed [[Contents]]}}
 - {{embed ((62916397-1eda-47e4-9440-e3eb32e673d6))}}
   {{embed ((62916399-7ae9-4f8c-b779-5d680caed091))}}
   {{embed ((6448565a-9c31-4af6-999b-79d7afc7b3a3))}}
-- {{embed [[Contents]]}}
