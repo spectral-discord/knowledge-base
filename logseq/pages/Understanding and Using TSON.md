@@ -12,12 +12,13 @@
 			- ```yaml
 			  tunings:
 			    - scales:
-			      - reference frequency: 100 hz
+			      - reference:
+			      	frequency: 100 Hz
 			        notes:
-			          - 1			# 100 hz
-			          - 1.3		# 130 hz
-			          - 1.5		# 150 hz
-			          - 1.75		# 175 hz
+			          - 1			# 100 Hz
+			          - 1.3		# 130 Hz
+			          - 1.5		# 150 Hz
+			          - 1.75		# 175 Hz
 			  ```
 	- If a tuning has multiple scales, the scales can overlap so that their notes are interlaced.
 		- *Example*
@@ -25,18 +26,20 @@
 			- ```yaml
 			  tunings:
 			    - scales:
-			      - reference frequency: 100 hz
+			      - reference:
+			      	frequency: 100 Hz
 			        notes:
-			          - 1			# 100 hz
-			          - 1.5		# 150 hz
-			          - 1.75		# 175 hz
+			          - 1			# 100 Hz
+			          - 1.5		# 150 Hz
+			          - 1.75		# 175 Hz
 			  
-			      - reference frequency: 80 hz
+			      - reference:
+			      	frequency: 80 Hz
 			        notes:
-			          - 1 		# 80 hz
-			          - 1.5		# 120 hz
-			          - 2			# 160 hz
-			          - 2.5		# 200 hz
+			          - 1 		# 80 Hz
+			          - 1.5		# 120 Hz
+			          - 2			# 160 Hz
+			          - 2.5		# 200 Hz
 			  ```
 - ### Scale Parameters
   collapsed:: true
@@ -46,12 +49,13 @@
 			- ```yaml
 			  tunings:
 			    - scales:
-			      - reference frequency: 100 hz
-			        repeat ratio: 2
+			      - reference:
+			      	frequency: 100 Hz
+			        repeat: 2
 			        notes:
-			          - 1			# ... 50 hz, 100 hz, 200 hz, 400 hz ...
-			          - 1.5		# ... 75 hz, 150 hz, 300 hz, 600 hz ...
-			          - 1.75		# ... 87.5 hz, 175 hz, 350 hz, 700 hz ...
+			          - 1			# ... 50 Hz, 100 Hz, 200 Hz, 400 Hz ...
+			          - 1.5		# ... 75 Hz, 150 Hz, 300 Hz, 600 Hz ...
+			          - 1.75		# ... 87.5 Hz, 175 Hz, 350 Hz, 700 Hz ...
 			  ```
 	- By providing [minimum](((6296c474-695c-450e-9ecb-d0c2fac4ad30))) and [maximum](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) frequencies for a scale, you can limit the frequency range that notes will be generated for. This way, you can prevent overlapping scales.
 		- *Example*
@@ -59,20 +63,22 @@
 			- ```yaml
 			  tunings:
 			    - scales:
-			      - reference: 100 hz
-			        min: 300 hz
+			      - reference: 
+			      	frequency: 100 Hz
+			        min: 300 Hz
 			        repeat: 2.0
 			        notes:
-			          - 1.0		# 400 hz, 800 hz, 1600 hz, 3200 hz ...
-			          - 1.5		# 300 hz, 600 hz, 1200 hz, 2400 hz ...
-			          - 1.75		# 350 hz, 700 hz, 1400 hz, 2800 hz ...
-			      - reference: 80
+			          - 1.0		# 400 Hz, 800 Hz, 1600 Hz, 3200 Hz ...
+			          - 1.5		# 300 Hz, 600 Hz, 1200 Hz, 2400 Hz ...
+			          - 1.75		# 350 Hz, 700 Hz, 1400 Hz, 2800 Hz ...
+			      - reference: 
+			      	frequency: 80
 			        max: 300
 			        repeat: 2.5
 			        notes:
-			          - 1			# ... 32 hz, 80 hz, 200 hz
-			          - 1.5		# ... 48 hz, 120 hz, 300 hz
-			          - 2			# ... 64 hz, 160 hz
+			          - 1			# ... 32 Hz, 80 Hz, 200 Hz
+			          - 1.5		# ... 48 Hz, 120 Hz, 300 Hz
+			          - 2			# ... 64 Hz, 160 Hz
 			  ```
 	- If a repeat ratio is provided but min/max values are not, the scale could be repeated to cover any frequency range (whether toward $$\infty$$, the infinite regression of the asymptote at $$0$$, or both).
 	- If a [note](((62919243-8c47-4050-b49c-ca654d73e36b))) is not provided in the reference object, the reference frequency will be set to the scale's root (ie, ratio `1.0`) that note [frequency ratios](((62918b58-f893-48c9-b530-4102f7f3c173))) are based on.
@@ -101,14 +107,16 @@
 		  tunings:
 		    - scales:
 		        - notes: [ 1, 1.5^(1/4), 1.5^(2/4), 1.5^(3/4) ]
-		          reference frequency: 100
+		          reference:
+		            frequency: 100
 		        - notes:
 		            - ratio: 1.5^(1/4)
 		              name: B
 		            - 1.5^(3/4)
 		            - 1
 		            - 1.5^(2/4)
-		          reference frequency: 100
+		          reference:
+		            frequency: 100
 		  ```
 - ### Spectra and Partial Distributions
   collapsed:: true

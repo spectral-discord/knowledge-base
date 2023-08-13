@@ -101,7 +101,8 @@
 	    - name: 12edo
 	      id: 1
 	      scales:
-	        - reference: 440 hz
+	        - reference: 
+	        	  frequency: 440 Hz
 	          repeat ratio: 2.0
 	          notes:
 	            - frequency ratio: 1
@@ -120,7 +121,7 @@
 	            frequency: 400
 	            note: reffy
 	          repeat: 2
-	          max frequency: 800 hz
+	          max frequency: 800 Hz
 	          notes:
 	            - 1
 	            - ratio: 3/2
@@ -135,7 +136,7 @@
 	          spectrum: whatev
 	          notes:
 	            - 1
-	            - 3^(1/13)
+	            - 3^( 1 / 13 )
 	            # etc...
 	        - reference: 
 	            frequency: 2400
@@ -161,7 +162,7 @@
 	        - frequency ratio: 1
 	          amplitude weight: 1
 	        - ratio: 2
-	          weight: 1/2
+	          weight: .5
 	        # etc...
 	    - name: some inharmonic
 	      id: 2
@@ -173,8 +174,8 @@
 	        # etc...
 	  
 	  sets:
-	    - id: cool set
-	    	name: First one then the other
+	    - id: qwerty
+	    	name: cool set progression
 	    	members:
 	        - tuning: 1
 	          spectrum: 1

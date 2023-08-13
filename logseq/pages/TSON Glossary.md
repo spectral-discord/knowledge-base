@@ -6,26 +6,33 @@
 		- This normalization should be performed by audio software that consumes TSON data. If you're writing software that implements TSON, the [[TSONify]] SDKs will do this for you.
 - #### Expression
   id:: 629146bc-6e1e-4a00-b2a0-5c205cfb23c6
-	- **Expressions** are mathematical expressions, which can be used to define various parameters in TSON as an alternative to a real number.
-	- They use a simple syntax that you're probably familiar with, but only allow for so much mathematical complexity. Whitespace is ignored.
+	- **Expressions** are mathematical expressions, which can be used to define various TSON parameters as an alternative to real numbers.
+	- Expressions use a simple syntax that will probably be fairly intuitive for you, and which permits a somewhat limited set of arithmetical operations. Whitespace is ignored.
+	- For all current TSON use cases, expressions must resolve to a positive number.
 	- *Syntax*
 	  collapsed:: true
 		- Operators
-		  collapsed:: true
 			- Arithmetic: `+`, `-`, `*`, `/`
 			- Exponents: `^`
 			- Modulo: `%`
 			- Parentheses: `( )`
 		- Constants
-		  collapsed:: true
 			- Pi: `pi`
+			- Tau: `tau`
 			- Euler's number: `e`
-		- Variables
-		  collapsed:: true
-			- *Coming Soon!*
+		- Functions
+			- Absolute value: `abs(x)`
+			- Logarithms: `log(x, base)`
+				- Natural logarithm: `log(x)`
+				- Base 10: `log10(x)`
+				- Base 2: `log2(x)`
+		- #Planned Predefined variables, user-defined variables, user-defined functions
 	- *Examples*
 	  collapsed:: true
-		- ***TODO***
+		- `2^(702/1200)`
+		- `3.1^(log(4,2))+1`
+		- `( e^4  *  tau ) / 2`
+		- `abs(-6)`
 - #### Frequency Ratio
   id:: 62918b58-f893-48c9-b530-4102f7f3c173
 	- A **frequency ratio** defines a pitch's relative distance from a given reference or root frequency.
@@ -37,18 +44,20 @@
 		  ```yaml
 		  tunings:
 		    - scales:
-		      - reference frequency: 100 hz
+		      - reference:
+		      	frequency: 100 Hz
 		        notes:
-		          - 1			# 100 hz
-		          - 1.3		# 130 hz
-		          - 1.5		# 150 hz
-		          - 1.75		# 175 hz
-		      - reference frequency: 500 hz
+		          - 1			# 100 Hz
+		          - 1.3		# 130 Hz
+		          - 1.5		# 150 Hz
+		          - 1.75		# 175 Hz
+		      - reference:
+		      	frequency: 500 Hz
 		        notes:
-		          - 1			# 500 hz
-		          - 1.3		# 650 hz
-		          - 1.5		# 750 hz
-		          - 1.75		# 875 hz
+		          - 1			# 500 Hz
+		          - 1.3		# 650 Hz
+		          - 1.5		# 750 Hz
+		          - 1.75		# 875 Hz
 		  ```
 - #### Max Frequency
   id:: 6291bc28-1b8c-4517-b0b8-d8a6d001ce91
@@ -77,17 +86,19 @@
 	- If a **reference note** is defined, then that note will be mapped onto the reference frequency, and all other notes will be mapped relative to the reference note.
 	- *Example*
 	  id:: 62f2aa52-df6a-435c-9449-e62c2a2afa86
+	  collapsed:: true
 		- ```yaml
 		  tunings:
-		    - scales:
-		      - reference frequency: 300 hz
-		        reference note: ref
+		    scales:
+		      - reference:
+		      	frequency: 300 Hz
+		        	note: ref
 		        notes:
-		          - 1				# 200 hz
+		          - 1				# 200 Hz
 		          - name: ref		# Name is defined so it can be used as a reference note
-		            ratio: 1.5	# 300 hz
-		          - 1.75			# 350 hz
-		          - 2				# 400 hz
+		            ratio: 1.5	# 300 Hz
+		          - 1.75			# 350 Hz
+		          - 2				# 400 Hz
 		  ```
 - #### Repeat Ratio
   id:: 6291924c-5500-456e-9cca-6a138f6e16c6
@@ -95,7 +106,7 @@
 	- When the scale repeats, the repeat ratio becomes the new root and all of the notes are generated in relation to this new root.
 	- The scale also repeats at the inverse of this ratio. That way the scale repeats in both directions across the frequency spectrum from the origin of the scale's [reference frequency](((62919254-679c-4edd-aacc-105fc45c85b2))).
 	  collapsed:: true
-		- *Example:* If the scale's repeat ratio is `2` and its root sits at `100 hz`, then the next highest scale iteration will have a root of `200 hz` and the next lowest iteration will have a root of `50 hz`. Then `400 hz` and `25 hz`, etc.
+		- *Example:* If the scale's repeat ratio is `2` and its root sits at `100 Hz`, then the next highest scale iteration will have a root of `200 Hz` and the next lowest iteration will have a root of `50 Hz`. Then `400 Hz` and `25 Hz`, etc.
 	- This process repeats until either no more notes need to be generated or the [min](((6296c474-695c-450e-9ecb-d0c2fac4ad30)))/[max](((6291bc28-1b8c-4517-b0b8-d8a6d001ce91))) frequencies have been reached.
 	- This has often been referred to elsewhere as a ***pseudo-octave***. TSON uses the more generic **repeat ratio** that doesn't refer to specific tonal structures or concepts in western music theory (8 diatonic scale notes per octave, for instance).
 - #### Root
@@ -105,7 +116,7 @@
 	- The root doesn't have to coincide with a note - ie, a note with a frequency ratio of `1` must be defined if you want one to exist there.
 - #### Scale
   id:: 6291ba45-59c1-4071-96b1-5d56a5a0f999
-	- **Scales** are groups of [notes](((6296c7f7-ddf0-47bc-823c-a717f49b2b63))) and various parameters that can be used to generate all, or part of, a tuning.
+	- **Scales** are groups of [notes](((6296c7f7-ddf0-47bc-823c-a717f49b2b63))) and various parameters that can be used to generate all or part of a tuning.
 	  id:: 6296869a-0c5b-487b-af9c-dfca96eacf1d
 - #### Set
 	- Sets allow you to define lists of tunings, spectra, and tuning-spectrum pairings.
