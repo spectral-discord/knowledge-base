@@ -48,10 +48,10 @@ html[data-theme=light] {
 	--cl-silver: 		#bfbfbf;
 	--cl-pumice: 		#c6c6c6;
 	--cl-alto: 			#c8c8c8;
-	--cl-iron: 			#c9caca;
+	--cl-iron: 			#414747;
 	--cl-greyser: 		#cecfcf;
 	--cl-gainsboro: 	#dddddd;
-	--cl-athens: 		#dedede;
+	--cl-athens: 		#9fa1a0;
 	--cl-gallery: 		#efefef;
 	--cl-wildsand: 		#f4f5f5;
 	--cl-alabaster: 	#fbfbfb;
@@ -701,15 +701,15 @@ html[data-theme="light"] .brackets {
 }
 
 html[data-theme="light"] a:hover>.bullet-container {
-	background-color: 		var(--cl-magnesium);
-}
-
-html[data-theme="light"] .ls-block .bullet {
 	background-color: 		var(--cl-mandy);
 }
 
-html[data-theme="light"] .bullet-container.bullet-closed {
+html[data-theme="light"] .ls-block .bullet {
 	background-color: 		var(--cl-magnesium);
+}
+
+html[data-theme="light"] .bullet-container.bullet-closed {
+	background-color: 		var(--cl-mandy);
 }
 
 html[data-theme="light"] button:hover {
@@ -2174,12 +2174,12 @@ html[data-theme="light"] #head .button {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			5px;
-	color: 					var(--cl-iron);
+	color: 					var(--cl-stardust);
 	opacity: 				1;
 }
 
 html[data-theme="light"] #head .button:hover {
-	color: 					var(--cl-stardust);
+	color: 					var(--cl-iron);
 	opacity: 				1;
 }
 

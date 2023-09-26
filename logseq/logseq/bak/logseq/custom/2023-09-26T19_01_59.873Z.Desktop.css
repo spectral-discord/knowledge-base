@@ -708,8 +708,8 @@ html[data-theme="light"] .ls-block .bullet {
 	background-color: 		var(--cl-magnesium);
 }
 
-html[data-theme="light"] .bullet-container.bullet-closed {
-	background-color: 		var(--cl-mandy);
+.ls-block .bullet, .bullet-container, a:hover>.bullet-container {
+	display: none;
 }
 
 html[data-theme="light"] button:hover {
@@ -1860,6 +1860,22 @@ html[data-theme="light"] #right-sidebar .rotating-arrow svg {
 	color: 					var(--cl-iron);
 }
 
+html[data-theme="light"] #right-sidebar .rotating-arrow:hover svg {
+	color: 					var(--cl-magnesium);
+}
+
+html[data-theme="light"] #right-sidebar .rotating-arrow svg {
+	color: 					var(--cl-iron);
+}
+
+html[data-theme="light"] .rotating-arrow svg {
+	color: 					var(--cl-magnesium);
+}
+
+html[data-theme="light"] .rotating-arrow svg {
+	color: 					var(--cl-iron);
+}
+
 html[data-theme="light"] #right-sidebar .scrollbar-spacing::-webkit-scrollbar-track {
 	background-color: 		var(--cl-alabaster);
 }
@@ -2174,12 +2190,12 @@ html[data-theme="light"] #head .button {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			5px;
-	color: 					var(--cl-iron);
+	color: 					var(--cl-stardust);
 	opacity: 				1;
 }
 
 html[data-theme="light"] #head .button:hover {
-	color: 					var(--cl-stardust);
+	color: 					var(--cl-iron);
 	opacity: 				1;
 }
 
