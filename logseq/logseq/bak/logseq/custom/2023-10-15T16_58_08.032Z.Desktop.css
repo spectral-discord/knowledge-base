@@ -700,7 +700,15 @@ html[data-theme="light"] .brackets {
 	color: 					var(--cl-magnesium);
 }
 
-.ls-block .bullet, .bullet-container .bullet, .bullet-container .bullet:hover, .ls-block .bullet:hover {
+html[data-theme="light"] a:hover>.bullet-container {
+	background-color: 		var(--cl-mandy);
+}
+
+html[data-theme="light"] .ls-block .bullet {
+	background-color: 		var(--cl-magnesium);
+}
+
+.ls-block .bullet, .bullet-container, a:hover>.bullet-container {
 	display: none;
 }
 
@@ -733,10 +741,6 @@ html[data-theme="light"] div[data-refs-self*='"card"'] {
 	border-radius: 			2px;
 	box-shadow: 			none!important;
 	--webkit-box-shadow: 	none!important;
-}
-
-html[data-theme="light"] .rotating-arrow svg {
-	color: 					var(--cl-);
 }
 
 html[data-theme="light"] .form-checkbox:checked {
@@ -1849,6 +1853,14 @@ html[data-theme="light"] #right-sidebar .rotating-arrow:hover svg {
 }
 
 html[data-theme="light"] #right-sidebar .rotating-arrow svg {
+	color: 					var(--cl-iron);
+}
+
+html[data-theme="light"] .rotating-arrow:hover svg {
+	color: 					var(--cl-magnesium);
+}
+
+html[data-theme="light"] .rotating-arrow svg {
 	color: 					var(--cl-iron);
 }
 

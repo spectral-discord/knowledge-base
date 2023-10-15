@@ -12,7 +12,7 @@
   --white: var(--foreground);
   --white-hover: #e9e9e9;
   --red: #ff2e97;
-  --orange: #9e0a52;
+  --orange: #ff2e97;
   --yellow: #ffd400;
   --green: #17ffa6;
   --purple: #ff2cf1;
@@ -708,8 +708,8 @@ html[data-theme="light"] .ls-block .bullet {
 	background-color: 		var(--cl-magnesium);
 }
 
-html[data-theme="light"] .bullet-container.bullet-closed {
-	background-color: 		var(--cl-mandy);
+.ls-block .bullet, .bullet-container, a:hover>.bullet-container {
+	display: none;
 }
 
 html[data-theme="light"] button:hover {
@@ -741,10 +741,6 @@ html[data-theme="light"] div[data-refs-self*='"card"'] {
 	border-radius: 			2px;
 	box-shadow: 			none!important;
 	--webkit-box-shadow: 	none!important;
-}
-
-html[data-theme="light"] .rotating-arrow svg {
-	color: 					var(--cl-);
 }
 
 html[data-theme="light"] .form-checkbox:checked {
@@ -1857,6 +1853,14 @@ html[data-theme="light"] #right-sidebar .rotating-arrow:hover svg {
 }
 
 html[data-theme="light"] #right-sidebar .rotating-arrow svg {
+	color: 					var(--cl-iron);
+}
+
+html[data-theme="light"] .rotating-arrow:hover svg {
+	color: 					var(--cl-magnesium);
+}
+
+html[data-theme="light"] .rotating-arrow svg {
 	color: 					var(--cl-iron);
 }
 
